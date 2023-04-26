@@ -1,0 +1,4 @@
+﻿  Cliente.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(33,37): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(38,41): warning C4244: '+=': conversión de 'float' a 'unsigned int'; posible pérdida de datos
+  TP1_CODIGO.vcxproj -> C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP1_CODIGO_SOLUCION\x64\Debug\TP1_CODIGO.exe
