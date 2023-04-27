@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _ARTICULOS_H
 #define _ARTICULOS_H
 #include <string>
@@ -11,37 +10,37 @@
 using namespace std;
 
 class Articulos {
-public: 
-    
-Articulos( string _Nombre_art,  float _Tamanyo,  string _Categoria_articulo);
+public:
+
+    Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_articulo);
     ~Articulos();
-    
-string get_nombre_art();
-    
-void set_cant_art( unsigned int Cant);
-    
 
-void set_precio( unsigned int precio);
-    
+    string get_nombre_art();
 
-bool existe_art( string tipoart);
-    
-float get_Tam();
-    
-float get_precio();
- 
-unsigned int get_Cant_art();
+    void set_cant_art(unsigned int Cant);
 
 
+    void set_precio(unsigned int precio);
 
-protected: 
-        const string Nombre_art;
+
+    bool existe_art(string tipoart);
+
+    float get_Tam();
+
+    float get_precio();
+
+    unsigned int get_Cant_art();
+
+
+
+protected:
+    const string Nombre_art;
     unsigned int Cant_art_pedido;
     unsigned int Precio;
-        const float Tamanyo;
-        const string Categoria_articulo;
+    const float Tamanyo;
+    const string Categoria_articulo;
     bool Cambio;
-    
+
 
 };
 

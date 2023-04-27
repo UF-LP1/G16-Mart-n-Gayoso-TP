@@ -2,9 +2,9 @@
 
 #include "Articulos.h"
 
-Articulos::Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_articulo): Nombre_art(_Nombre_art), Tamanyo(_Tamanyo),Categoria_articulo(_Categoria_articulo)
-{ 
-    this->Cant_art_pedido=0;
+Articulos::Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_articulo) : Nombre_art(_Nombre_art), Tamanyo(_Tamanyo), Categoria_articulo(_Categoria_articulo)
+{
+    this->Cant_art_pedido = 0;
     this->Precio = 0;
     this->Cambio = true; //lo inicializoen true y que al momento de revisar las condiciones de cambio en caso que el prducto ya no valga para eso cambia a false
 }
@@ -39,13 +39,15 @@ unsigned int Articulos::get_Cant_art()
 
 
 
-bool Articulos::existe_art( string tipoart) { 
-    
+bool Articulos::existe_art(string tipoart) {
+
     if (tipoart == this->Nombre_art)
         return true;
     else
-    return false;
-} 
+        return false;
+}
+
+
 
 
 
