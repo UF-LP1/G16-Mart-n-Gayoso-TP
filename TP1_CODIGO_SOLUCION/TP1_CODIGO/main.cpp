@@ -3,6 +3,7 @@
 #include "Model/Stock.h"
 #include "Model/Ferreteria.h"
 #include <list>
+using namespace std;
 
 int main()
 {
@@ -39,7 +40,7 @@ int main()
 	Cliente1->agregarArt(*Articulo2);
 	Cliente1->agregarArt(*Articulo3);
 
-	PresupuestoTotal = Cliente1->generarPresupuestos(*Cliente1);
+	PresupuestoTotal = Cliente1->generarPresupuestos(*Cliente1,*stockp);
 
 	cout << PresupuestoTotal;
 

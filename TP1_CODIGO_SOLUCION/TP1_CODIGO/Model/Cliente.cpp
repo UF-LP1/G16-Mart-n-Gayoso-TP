@@ -6,6 +6,7 @@
 #include "Cliente.h"
 #include "stock.h"
 #include <list>
+using namespace std;
 
 
 
@@ -27,12 +28,12 @@ string Cliente::get_tel() {
     return this->Telefono_cliente;
 }
 
-unsigned int Cliente::generarPresupuestos(Cliente Cliente1)
+unsigned int Cliente::generarPresupuestos(Cliente clienteA,stock stock1)
 {
 
     int i;
-    stock stock1;
-    bool ArtExist = stock1.buscar_art(Cliente1);
+    bool ArtExist;
+    ArtExist= stock1.buscar_art(clienteA);
   
 
 

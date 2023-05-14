@@ -1,6 +1,7 @@
 
 
 #include "Articulos.h"
+using namespace std;
 
 Articulos::Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_articulo) : Nombre_art(_Nombre_art), Tamanyo(_Tamanyo), Categoria_articulo(_Categoria_articulo)
 {

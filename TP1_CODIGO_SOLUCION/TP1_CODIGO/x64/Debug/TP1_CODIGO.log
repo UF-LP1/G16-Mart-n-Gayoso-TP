@@ -1,16 +1,18 @@
 ﻿  main.cpp
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(21,21): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(26,67): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(21,21): error C2061: error de sintaxis: identificador 'Cliente'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(27,67): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Articulos.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.cpp(33,16): warning C4244: 'return': conversión de 'unsigned int' a 'float'; posible pérdida de datos
   Cliente.cpp
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(21,21): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(35,27): error C2660: 'stock::buscar_art': la función no acepta 1 argumentos
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(21,10): message : vea la declaración de 'stock::buscar_art'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(35,27): message : al hacer coincidir la lista de argumentos '(Cliente)'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(39,37): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(46,45): warning C4244: '+=': conversión de 'float' a 'unsigned int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(21,21): error C2061: error de sintaxis: identificador 'Cliente'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(36,41): error C2660: 'stock::buscar_art': la función no acepta 1 argumentos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(21,10): message : vea la declaración de 'stock::buscar_art'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(40,37): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(47,45): warning C4244: '+=': conversión de 'float' a 'unsigned int'; posible pérdida de datos
   Ferreteria.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.h(26,56): error C2061: error de sintaxis: identificador 'stock'
   stock.cpp
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.cpp(26,46): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.cpp(27,31): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.h(26,56): error C2061: error de sintaxis: identificador 'stock'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.cpp(48,46): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.cpp(49,31): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
   Generando código...
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.cpp(50): warning C4715: 'stock::buscar_art': no todas las rutas de acceso de control devuelven un valor
