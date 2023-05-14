@@ -16,7 +16,7 @@ using namespace std;
 class Articulos_Ferreteria: public Articulos {
 public: 
 
- Articulos_Ferreteria(string _Nombre_art, float _Tamanyo, string _Categoria_articulo, string _Material); 
+ Articulos_Ferreteria(string _Nombre_art, float _Tamanyo, string _Categoria_articulo, string _Material, Especificaciones tip_ferre); 
  ~Articulos_Ferreteria();
 
 protected: 

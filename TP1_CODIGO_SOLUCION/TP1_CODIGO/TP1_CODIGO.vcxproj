@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model\Articulos.cpp" />
-    <ClCompile Include="Model\Articulos_CocinayBaño_Bazar.cpp" />
+    <ClCompile Include="Model\Articulos_CocinayBano_Bazar.cpp" />
     <ClCompile Include="Model\Articulos_Electricidad.cpp" />
     <ClCompile Include="Model\Articulos_Ferreteria.cpp" />
     <ClCompile Include="Model\Cliente.cpp" />
@@ -157,7 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Model\Articulos.h" />
-    <ClInclude Include="Model\Articulos_CocinayBaño_Bazar.h" />
+    <ClInclude Include="Model\Articulos_CocinayBano_Bazar.h" />
     <ClInclude Include="Model\Articulos_Electricidad.h" />
     <ClInclude Include="Model\Articulos_Ferreteria.h" />
     <ClInclude Include="Model\Cliente.h" />

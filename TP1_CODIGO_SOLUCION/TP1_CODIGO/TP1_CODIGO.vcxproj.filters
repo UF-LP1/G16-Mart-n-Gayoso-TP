@@ -18,7 +18,7 @@
     <ClCompile Include="Model\Articulos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Model\Articulos_CocinayBaño_Bazar.cpp">
+    <ClCompile Include="Model\Articulos_CocinayBano_Bazar.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Model\Articulos_Electricidad.cpp">
@@ -65,7 +65,7 @@
     <ClInclude Include="Model\Articulos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Model\Articulos_CocinayBaño_Bazar.h">
+    <ClInclude Include="Model\Articulos_CocinayBano_Bazar.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Model\Articulos_Electricidad.h">

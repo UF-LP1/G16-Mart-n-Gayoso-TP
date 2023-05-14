@@ -7,6 +7,8 @@
 #include"Articulos.h"
 #include <iostream>
 #include <list>
+#include "stock.h"
+
 using namespace std;
 
 class Cliente {
@@ -23,7 +25,7 @@ public:
 
     unsigned int generarPresupuestos(Cliente Cliente1);
 
-    void agregarArt(Articulos);
+    void agregarArt(Articulos Art_pedido);
 
     list <Articulos> lista_Art_Pedidos;
 

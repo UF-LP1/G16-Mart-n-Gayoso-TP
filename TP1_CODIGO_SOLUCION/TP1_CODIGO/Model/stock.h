@@ -18,7 +18,7 @@ public:
     ~stock();
 
 
-    bool buscar_art(Cliente ClienteA);
+    bool buscar_art(Cliente &ClienteA);
 
 
     void set_nomb_art(string Nombre_art_ped);
@@ -27,10 +27,16 @@ public:
     void set_cant_art(unsigned int Cant_art_s);
 
     bool Cant_necesaria();
+
+    list<Articulos>list_stock;
+
+    void agregar_stock(list<Articulos> art);
+
+
 protected:
     string Nombre_art_pedido;
     unsigned int Cant_art_stock;
-    list<Articulos>list_stock;
+   
 
 };
 

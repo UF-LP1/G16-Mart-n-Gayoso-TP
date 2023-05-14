@@ -33,6 +33,7 @@ unsigned int Cliente::generarPresupuestos(Cliente Cliente1)
     int i;
     stock stock1;
     bool ArtExist = stock1.buscar_art(Cliente1);
+  
 
 
     int N = lista_Art_Pedidos.size();
