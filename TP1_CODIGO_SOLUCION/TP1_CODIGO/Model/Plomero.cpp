@@ -16,11 +16,7 @@ Plomero::Plomero(string _Tipo_empleado, string _Nombre, string _Apellido, string
 	this->Mantenimiento = false;
 }
 
-void Empleados::realizar_trabajo() {
-   
-	cout << "Realizando trabajo de plomero";
-	return;
-}
+
 
 
  Plomero::~Plomero() {
@@ -35,4 +31,9 @@ void Empleados::realizar_trabajo() {
  void Plomero::set_Mantenimiento(bool mant)
  {
 	 this->Mantenimiento = mant;
+ }
+
+ void Plomero::realizar_trabajo()
+ {
+	 cout << "Realizando Trabajo de plomero"<<endl;
  }

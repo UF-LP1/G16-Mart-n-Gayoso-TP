@@ -22,9 +22,9 @@ Despachante::Despachante(string _Tipo_empleado, string _Nombre, string _Apellido
 	
 }
 
-void Empleados::realizar_trabajo() {
+void Despachante::realizar_trabajo() {
 
-	cout << "Realizando trabajo de despachante";
+	cout << "Realizando trabajo de despachante" << endl;
 	return;
 }
 Despachante::~Despachante() {

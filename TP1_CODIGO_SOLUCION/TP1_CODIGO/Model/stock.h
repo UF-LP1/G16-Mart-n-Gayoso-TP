@@ -30,14 +30,14 @@ public:
 
     list<Articulos>list_stock;
 
-    void agregar_stock(const list<Articulos>& art);
+    void agregar_stock( list<Articulos> art);
 
-    stock& operator=(const list<Articulos>& art)
+    stock& operator=( const list<Articulos>& art)
     {
         list_stock = art;
         return *this;
     }
-
+    
 protected:
     string Nombre_art_pedido;
     unsigned int Cant_art_stock;

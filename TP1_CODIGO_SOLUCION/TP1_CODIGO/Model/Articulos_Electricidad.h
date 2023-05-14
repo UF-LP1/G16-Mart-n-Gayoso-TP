@@ -7,10 +7,11 @@
 #define _ARTICULOS_ELECTRICIDAD_H
 #include <string>
 #include <iostream>
+#include "enchufes.h";
+#include "lampara.h";
+#include "Articulos.h" 
 using namespace std;
-#include"enchufes.h";
-#include"lampara.h";
-#include "Articulos.h"
+
 
 
 class Articulos_Electricidad: public Articulos {

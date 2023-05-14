@@ -19,7 +19,7 @@ public:
      ~Plomero();
      void set_rep_inst(bool rep_inst);
      void set_Mantenimiento(bool mant);
-
+     void realizar_trabajo() override;
         
 protected: 
     bool Reparacion_instalacion; //true reparacion, false instalacion

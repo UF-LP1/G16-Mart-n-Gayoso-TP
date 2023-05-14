@@ -21,7 +21,7 @@ public:
 
 
    virtual void set_precio(unsigned int precio);
-
+   virtual void set_cambio(bool cambio);
 
     //bool existe_art(string tipoart); este metodo lo sacamos porque la funcion de esta ya la cumple busacrart en stock 
 

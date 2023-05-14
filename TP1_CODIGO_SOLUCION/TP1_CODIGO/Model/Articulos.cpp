@@ -7,7 +7,7 @@ Articulos::Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_artic
 {
     this->Cant_art_pedido = 0;
     this->Precio = 0;
-    this->Cambio = true; //lo inicializoen true y que al momento de revisar las condiciones de cambio en caso que el prducto ya no valga para eso cambia a false
+    this->Cambio = false; 
 }
 
  string Articulos::get_nombre_art() {
@@ -22,6 +22,11 @@ float Articulos::get_Tam() {
 
 void Articulos::set_precio(unsigned int precio) {
     this->Precio = precio;
+}
+
+void Articulos::set_cambio(bool cambio)
+{
+    this->Cambio = cambio;
 }
 
 void Articulos::set_cant_art(unsigned int Cant)

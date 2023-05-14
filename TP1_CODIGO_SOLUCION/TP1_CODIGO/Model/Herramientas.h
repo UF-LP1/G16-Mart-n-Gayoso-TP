@@ -20,21 +20,23 @@ public:
  ~Herramientas();
     
 
-void set_Precio_h( unsigned int p_h);
+void set_Precio_D( unsigned int p_D);
     
 
 void set_Precio_s(unsigned int p_s);
     
 
 void set_tiempo( unsigned int t_a);
+
+unsigned int get_Precio_S();
     
-unsigned int get_tiempo_a_alquilar();
+unsigned int get_total_alquilar();
 protected: 
-    bool Alquiler;
+    bool Alquiler;// true se puede alquilar false no se puede
     unsigned int precio_seguro;
     unsigned int precio_alquiler;
-    unsigned int tiempo_a_alquilar;
-    bool Estado_art_a_alquilado;
+    unsigned int tiempo_a_alquilar;//cantidad de dias TRY CATCH
+    bool Estado_art_a_alquilado; // true esta alquilado flase no esta alquilado
     
 
 };

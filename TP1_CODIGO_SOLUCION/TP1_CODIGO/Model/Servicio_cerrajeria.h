@@ -23,6 +23,7 @@ public:
 string  get_tipo_llave();
     
 string get_tipo_serv();
+void realizar_trabajo() override;
 
 protected: 
      const string tipo_servicio;//venta de llaves o de cerradura

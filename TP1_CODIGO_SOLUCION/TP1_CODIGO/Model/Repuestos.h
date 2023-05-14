@@ -9,19 +9,19 @@
 #include <iostream>
 using namespace std;
 
-class Repuestos {
+class Repuestos{
 public: 
     
 
- Repuestos(string _Categoria,  float Tam);
+ Repuestos(string _NombreArt,  float Tam);
  ~Repuestos();
     
-//string foto();//ver como hacer esta funcion
+
     
 float get_tam();
 
 protected: 
-    const string Categoria;
+    const string NombreArt;
     const float Tamanyo_art_acambiar;
     
 

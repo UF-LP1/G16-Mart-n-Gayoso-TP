@@ -19,31 +19,47 @@ Duenyo_ferreteria();
 ~Duenyo_ferreteria();
     
 
-void contratar(Empleados);
+void contratar(const Empleados& empleado);
     
 
-void despedir(Empleados);
+void despedir(const Empleados& empleado);
     
 
 void set_cobrar(unsigned int _A_cobrar);
     
-void cobrar();
+
     
 
-void set_pagar( unsigned int _A_pagar);
+void set_pagar_Articulos(unsigned int platac, unsigned int _A_pagar);
+void set_pagar_seguro(unsigned int seguro);
     
-unsigned int pagar();
 
-void Vender(Articulos);
+//void Vender(Articulos);
 
+
+
+friend list<Empleados> operator+(list<Empleados>list_empleados, const Empleados& empleado);
+friend list<Empleados> operator-(list<Empleados>list_empleados, const Empleados& empleado);
 
 
 
 protected: 
     unsigned int A_cobrar;
     unsigned int A_pagar;
-    
+    list<Empleados> list_empleados;
 
 };
+
+
+list<Empleados> operator+(list<Empleados> list_empleados, const Empleados& empleado)
+{
+    list_empleados.push_back(empleado);
+    return list_empleados;
+}
+inline list<Empleados> operator-(list<Empleados> list_empleados, const Empleados& empleado)
+{
+    list_empleados.remove(empleado);
+    return list_empleados;
+}
 
 #endif //_DUENYO_FERRETERIA_H
