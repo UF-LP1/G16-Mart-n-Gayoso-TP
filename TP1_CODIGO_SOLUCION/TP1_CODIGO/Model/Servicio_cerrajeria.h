@@ -16,20 +16,17 @@ class Servicio_cerrajeria: public Empleados {
 public: 
     
 
- Servicio_cerrajeria(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos, unsigned int _precio, string tipo_serv,  string tipo_llave);
+ Servicio_cerrajeria(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos, string tipo_serv,  string tipo_llave);
  ~Servicio_cerrajeria();
     
-
- unsigned int get_prec();
     
 string  get_tipo_llave();
     
 string get_tipo_serv();
 
 protected: 
-    const unsigned int precio;
-     const string tipo_servicio;
-     const string tipo_de_llave;
+     const string tipo_servicio;//venta de llaves o de cerradura
+     const string tipo_de_llave;//magnetica o normal, en caso de que sea cerradura va "vacio"
     
 
 };

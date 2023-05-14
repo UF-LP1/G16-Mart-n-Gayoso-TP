@@ -15,15 +15,15 @@ public:
 Empleados(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos);
 ~Empleados();
     
-string get_name();
+virtual string get_name();
     
-string get_surname();
+virtual string get_surname();
     
-string get_dni();
+virtual string get_dni();
     
-void realizar_trabajo();
+virtual void realizar_trabajo();
     
-unsigned int get_sueldos();
+virtual unsigned int get_sueldos();
 
 protected: 
         const string Tipo_empleado;

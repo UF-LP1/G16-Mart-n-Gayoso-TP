@@ -17,7 +17,8 @@ class Despachante: public Empleados {
 public: 
     Despachante(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos, unsigned int Cant_entreg, unsigned int Cant_prods);
     ~Despachante();
-
+    const unsigned int get_Cant_entreg();
+    unsigned int get_cant_prod();
 protected: 
     const unsigned int Cantidad_entregas;
     const unsigned int Cantidad_productos_entregar;
