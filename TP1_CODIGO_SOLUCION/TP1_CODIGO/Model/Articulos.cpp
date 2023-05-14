@@ -10,7 +10,7 @@ Articulos::Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_artic
     this->Cambio = true; //lo inicializoen true y que al momento de revisar las condiciones de cambio en caso que el prducto ya no valga para eso cambia a false
 }
 
-string Articulos::get_nombre_art() {
+ string Articulos::get_nombre_art() {
     return this->Nombre_art;
 }
 
@@ -40,13 +40,13 @@ unsigned int Articulos::get_Cant_art()
 
 
 
-bool Articulos::existe_art(string tipoart) {
+/*bool Articulos::existe_art(string tipoart) {
 
     if (tipoart == this->Nombre_art)
         return true;
     else
         return false;
-}
+}*/
 
 
 

@@ -6,7 +6,7 @@ Articulos_CocinayBano_Bazar::Articulos_CocinayBano_Bazar(string _Nombre_art, flo
 {
 	this->Articulo_color = color;
 
-}
+}    
 
 Articulos_CocinayBano_Bazar::~Articulos_CocinayBano_Bazar() {}
- 
+

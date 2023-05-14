@@ -9,6 +9,8 @@ using namespace std;
 
 stock::stock()
 {
+    this->Cant_art_stock = 0;
+    this->Nombre_art_pedido ="";
 }
 
 void stock::agregar_stock(list<Articulos> art)
@@ -40,7 +42,7 @@ bool stock::Cant_necesaria() {
 stock::~stock() {
 
 }
-
+/*
 bool stock::buscar_art(Cliente clienteA)
 {
     list<Articulos>::iterator it = clienteA.lista_Art_Pedidos.begin();
@@ -48,13 +50,6 @@ bool stock::buscar_art(Cliente clienteA)
     int N = clienteA.lista_Art_Pedidos.size();
     int N1 = list_stock.size();
 
-    /*  for (int i = 0; i < N; i++)
-      {
-          if (find(list_stock.begin(), list_stock.end(), *it) == list_stock.end())
-              return false;
-          it++;
-      }
-      return true;*/
 
     for (int i = 0; i < N; i++)
     {
@@ -71,3 +66,4 @@ bool stock::buscar_art(Cliente clienteA)
     }
     
 }
+*/

@@ -27,7 +27,7 @@ string Cliente::get_direc() {
 string Cliente::get_tel() {
     return this->Telefono_cliente;
 }
-
+/*
 unsigned int Cliente::generarPresupuestos(Cliente clienteA,stock stock1)
 {
 
@@ -50,7 +50,8 @@ unsigned int Cliente::generarPresupuestos(Cliente clienteA,stock stock1)
     }
 
     return Presupuesto;
-}
+}*/
+
 void Cliente::agregarArt(Articulos Art_pedido)
 {
     lista_Art_Pedidos.push_back(Art_pedido);

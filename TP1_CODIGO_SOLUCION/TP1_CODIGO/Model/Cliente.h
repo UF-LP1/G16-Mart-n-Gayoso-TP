@@ -23,7 +23,7 @@ public:
 
     string get_tel();
 
-    unsigned int generarPresupuestos(Cliente clienteA, stock stock1);
+    //unsigned int generarPresupuestos(Cliente clienteA, stock stock1);
 
     void agregarArt(Articulos Art_pedido);
 

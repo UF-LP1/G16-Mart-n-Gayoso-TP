@@ -12,24 +12,24 @@ using namespace std;
 class Articulos {
 public:
 
-    Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_articulo);
+    Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_articulo); 
     ~Articulos();
 
-    string get_nombre_art();
+     string get_nombre_art();
 
-    void set_cant_art(unsigned int Cant);
-
-
-    void set_precio(unsigned int precio);
+   virtual void set_cant_art(unsigned int Cant);
 
 
-    bool existe_art(string tipoart);
+   virtual void set_precio(unsigned int precio);
 
-    float get_Tam();
 
-    float get_precio();
+    //bool existe_art(string tipoart); este metodo lo sacamos porque la funcion de esta ya la cumple busacrart en stock 
 
-    unsigned int get_Cant_art();
+   virtual float get_Tam() ;
+
+   virtual float get_precio() ;
+
+   virtual unsigned int get_Cant_art() ;
 
 
 

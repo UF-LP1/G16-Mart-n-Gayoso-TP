@@ -18,7 +18,7 @@ public:
     
 Articulos_Electricidad(string _Nombre_art, float _Tamanyo, string _Categoria_articulo, enchufes en, lampara lamp);
     ~Articulos_Electricidad();
-
+ 
 protected: 
     lampara Tipo_lampara;
     enchufes Tipo_enfuches;

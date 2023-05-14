@@ -18,7 +18,7 @@ public:
     ~stock();
 
 
-    bool buscar_art(Cliente clienteA);
+  //bool buscar_art(Cliente clienteA);
 
 
     void set_nomb_art(string Nombre_art_ped);
