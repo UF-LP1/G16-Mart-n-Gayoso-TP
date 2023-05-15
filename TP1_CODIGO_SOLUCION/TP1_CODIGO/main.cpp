@@ -39,8 +39,8 @@ int main()
 	Ferreteria1->set_direccion("Callao 1345");
 	cout << Ferreteria1->get_nombre() << endl;
 	
-	if (Ferreteria1->ingreso_horario(now) == true)//me fijo que este abierta
-	{
+	//if (Ferreteria1->ingreso_horario(now) == true)//me fijo que este abierta
+	//{
 
 
 
@@ -120,7 +120,7 @@ int main()
 		Repuestos* Repuesto1 = new Repuestos("Clavo", 0.3);
 
 
-		//PresupuestoTotal = Cliente1->generarPres5upuestos(*Cliente1,*stockp);
+		PresupuestoTotal = Cliente1->generarPresupuestos(*stockp);
 		ELDuenyo->set_cobrar(PresupuestoTotal);
 		ELDuenyo->set_pagar_Articulos(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
 		PlataSeguro = Herramienta1->get_Precio_S();
@@ -156,13 +156,13 @@ int main()
 		delete Repuesto1;
 		delete ELDuenyo;
 		delete stockp;
-	}
+	/*}
 
 	else
 	{
 	cout << "ESTA CERRADO";
 	}
 
-	return 0;
+	return 0;*/
 }
 

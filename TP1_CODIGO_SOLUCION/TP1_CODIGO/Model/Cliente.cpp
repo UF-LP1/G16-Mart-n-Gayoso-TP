@@ -5,7 +5,6 @@
 
 #include "Cliente.h"
 #include "stock.h"
-#include <list>
 using namespace std;
 
 
@@ -28,29 +27,7 @@ string Cliente::get_tel() {
     return this->Telefono_cliente;
 }
 
-//unsigned int Cliente::generarPresupuestos(Cliente clienteA,stock stock1)
-//{
-//
-//    int i;
-//    bool ArtExist;
-//    ArtExist= stock1.buscar_art(clienteA);
-//  
-//
-//
-//    int N = lista_Art_Pedidos.size();
-//    unsigned int Presupuesto = 0;
-//    list<Articulos>::iterator it = lista_Art_Pedidos.begin();
-//    if (ArtExist == true)
-//    {
-//        for (i = 0; i < N; i++)
-//        {
-//            Presupuesto += it->get_precio() * it->get_Cant_art();
-//            it++;
-//        }
-//    }
-//
-//    return Presupuesto;
-//}
+
 
 void Cliente::agregarArt(Articulos Art_pedido)
 {
@@ -58,7 +35,39 @@ void Cliente::agregarArt(Articulos Art_pedido)
 
 }
 
+
 Cliente::~Cliente() {
 
 }
 
+ unsigned int Cliente::generarPresupuestos(stock stock1)
+{
+    int i;
+    int N = lista_Art_Pedidos.size();
+    unsigned int Presupuesto = 0;
+    list<Articulos>::iterator it;
+
+    for (it = lista_Art_Pedidos.begin(); it != lista_Art_Pedidos.end(); it++)
+    {
+        list<Articulos>::iterator it2;
+        for (it2 = stock1.list_stock.begin(); it2 != stock1.list_stock.end(); it2++) // la funcion buscar nos estaba dando problemas entoces pensamos en directamente hacerla aca
+        {
+            if (it->get_nombre_art() == it2->get_nombre_art())
+            {
+                if (it->get_Cant_art() <= it2->get_Cant_art())
+                {
+                    Presupuesto += it->get_precio() * it->get_Cant_art();
+                    break;
+                }
+            }
+
+        }
+        if (it2 == stock1.list_stock.end())
+        {
+            cout << "El Articulo " << it->get_nombre_art() << "No esta en el stock actualmente" << endl;
+        }
+    }
+
+    return Presupuesto;
+   
+}

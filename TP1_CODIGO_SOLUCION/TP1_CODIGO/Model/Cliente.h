@@ -3,13 +3,15 @@
  */
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
+
 #include <string>
 #include"Articulos.h"
 #include <iostream>
 #include <list>
-#include "stock.h"
 
-using namespace std;
+
+class stock;//lo buscamos y para hacer el friend nos decia que teniamos que hacer esta "Forward declaration" si no nos funcionaba
+
 
 class Cliente {
 public:
@@ -18,12 +20,10 @@ public:
     ~Cliente();
 
     string get_name();
-
     string get_direc();
-
     string get_tel();
 
-    //unsigned int generarPresupuestos(Cliente clienteA, stock stock1);
+    unsigned int generarPresupuestos(stock stock1);
 
     void agregarArt(Articulos Art_pedido);
 
@@ -34,9 +34,6 @@ protected:
     const string Direc_cliente;
     const string Telefono_cliente;
 
-
-
 };
-
 
 #endif //_CLIENTE_H

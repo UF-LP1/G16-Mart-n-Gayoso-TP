@@ -4,11 +4,14 @@
 
 #ifndef _STOCK_H
 #define _STOCK_H
+
 #include <string>
-#include <iostream>
 #include"Articulos.h"
-#include "Cliente.h"
 #include <algorithm>
+#include <list>
+
+class Cliente; // lo buscamos y para hacer el friend nos decia que teniamos que hacer esta "Forward declaration" si no nos funcionaba
+
 using namespace std;
 
 class stock {
@@ -18,8 +21,9 @@ public:
     ~stock();
 
 
-  //bool buscar_art(Cliente clienteA);
+ // bool buscar_art(Cliente clienteA);
 
+  friend unsigned int Cliente::generarPresupuestos(stock stock1);     
 
     void set_nomb_art(string Nombre_art_ped);
 
@@ -31,7 +35,7 @@ public:
     list<Articulos>list_stock;
 
     void agregar_stock( list<Articulos> art);
-
+public:
     stock& operator=( const list<Articulos>& art)
     {
         list_stock = art;

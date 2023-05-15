@@ -24,15 +24,10 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(53,101): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(54,102): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(120,53): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Articulos.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.cpp(38,16): warning C4244: 'return': conversión de 'unsigned int' a 'float'; posible pérdida de datos
-  Articulos_CocinayBano_Bazar.cpp
-  Articulos_Electricidad.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(10,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(11,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-  Articulos_Ferreteria.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Ferreteria.h(11,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
   Cliente.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(46,37): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(59,53): warning C4244: '+=': conversión de 'float' a 'unsigned int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(45,9): warning C4101: 'i': variable local sin referencia
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1267,57): error C2280: 'Articulos &Articulos::operator =(const Articulos &)': se está intentando hacer referencia a una función eliminada.
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(45): message : el compilador generó 'Articulos::operator =' aquí
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(45,1): message : "Articulos &Articulos::operator =(const Articulos &)": la función se eliminó implícitamente porque un objeto "Articulos::Categoria_articulo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
@@ -62,8 +57,8 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
               _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
           ]
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1055): message : al compilar la función del miembro clase plantilla "std::list<Articulos,std::allocator<Articulos>> &std::list<Articulos,std::allocator<Articulos>>::operator =(const std::list<Articulos,std::allocator<Articulos>> &)"
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(37): message : Vea la referencia a la creación de una instancia de la función plantilla "std::list<Articulos,std::allocator<Articulos>> &std::list<Articulos,std::allocator<Articulos>>::operator =(const std::list<Articulos,std::allocator<Articulos>> &)" que se está compilando
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(31): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<Articulos,std::allocator<Articulos>>" que se está compilando
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(41): message : Vea la referencia a la creación de una instancia de la función plantilla "std::list<Articulos,std::allocator<Articulos>> &std::list<Articulos,std::allocator<Articulos>>::operator =(const std::list<Articulos,std::allocator<Articulos>> &)" que se está compilando
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.h(30): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<Articulos,std::allocator<Articulos>>" que se está compilando
   Duenyo_ferreteria.cpp
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(11,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,65): error C2676: '==' binario: 'const _Ty' no define este operador o una conversión a un tipo aceptable para el operador predefinido
@@ -85,70 +80,9 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
               _Pr1=std::list<Empleados,std::allocator<Empleados>>::remove::<lambda_2ec59f48be21930a28fd118ce9d6e81e>
           ]
   Ferreteria.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Ferreteria.cpp(25,22): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1267,57): error C2280: 'Articulos &Articulos::operator =(const Articulos &)': se está intentando hacer referencia a una función eliminada.
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(45): message : el compilador generó 'Articulos::operator =' aquí
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(45,1): message : "Articulos &Articulos::operator =(const Articulos &)": la función se eliminó implícitamente porque un objeto "Articulos::Categoria_articulo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(41): message : vea la declaración de 'Articulos::Categoria_articulo'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1276): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::_Assign_cast<Articulos&,_Iter>(_UIter,const _UIter)" que se está compilando
-          with
-          [
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1276): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::_Assign_cast<Articulos&,_Iter>(_UIter,const _UIter)" que se está compilando
-          with
-          [
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1070): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::assign<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>,0>(_Iter,_Iter)" que se está compilando
-          with
-          [
-              _Ty=Articulos,
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1070): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::assign<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>,0>(_Iter,_Iter)" que se está compilando
-          with
-          [
-              _Ty=Articulos,
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1055): message : al compilar la función del miembro clase plantilla "std::list<Articulos,std::allocator<Articulos>> &std::list<Articulos,std::allocator<Articulos>>::operator =(const std::list<Articulos,std::allocator<Articulos>> &)"
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(37): message : Vea la referencia a la creación de una instancia de la función plantilla "std::list<Articulos,std::allocator<Articulos>> &std::list<Articulos,std::allocator<Articulos>>::operator =(const std::list<Articulos,std::allocator<Articulos>> &)" que se está compilando
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.h(30): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<Articulos,std::allocator<Articulos>>" que se está compilando
-  Herramientas.cpp
-  Repuestos.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(26,32): error C2027: uso del tipo 'Cliente' sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(13): message : vea la declaración de 'Cliente'
   stock.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1267,57): error C2280: 'Articulos &Articulos::operator =(const Articulos &)': se está intentando hacer referencia a una función eliminada.
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(45): message : el compilador generó 'Articulos::operator =' aquí
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(45,1): message : "Articulos &Articulos::operator =(const Articulos &)": la función se eliminó implícitamente porque un objeto "Articulos::Categoria_articulo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.h(41): message : vea la declaración de 'Articulos::Categoria_articulo'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1276): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::_Assign_cast<Articulos&,_Iter>(_UIter,const _UIter)" que se está compilando
-          with
-          [
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1276): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::_Assign_cast<Articulos&,_Iter>(_UIter,const _UIter)" que se está compilando
-          with
-          [
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1070): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::assign<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>,0>(_Iter,_Iter)" que se está compilando
-          with
-          [
-              _Ty=Articulos,
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1070): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::list<Articulos,std::allocator<Articulos>>::assign<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>,0>(_Iter,_Iter)" que se está compilando
-          with
-          [
-              _Ty=Articulos,
-              _Iter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<Articulos>>,std::_Iterator_base0>
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1055): message : al compilar la función del miembro clase plantilla "std::list<Articulos,std::allocator<Articulos>> &std::list<Articulos,std::allocator<Articulos>>::operator =(const std::list<Articulos,std::allocator<Articulos>> &)"
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(37): message : Vea la referencia a la creación de una instancia de la función plantilla "std::list<Articulos,std::allocator<Articulos>> &std::list<Articulos,std::allocator<Articulos>>::operator =(const std::list<Articulos,std::allocator<Articulos>> &)" que se está compilando
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.h(30): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<Articulos,std::allocator<Articulos>>" que se está compilando
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(26,32): error C2027: uso del tipo 'Cliente' sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\stock.h(13): message : vea la declaración de 'Cliente'
   Generando código...

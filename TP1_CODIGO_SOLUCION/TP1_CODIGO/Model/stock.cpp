@@ -5,6 +5,7 @@
 
 
 #include "stock.h"
+#include "Cliente.h"
 using namespace std;
 
 stock::stock()
@@ -39,7 +40,7 @@ stock::~stock() {
 
 }
 
-//bool stock::buscar_art(Cliente clienteA)
+//bool stock::buscar_art(Cliente clienteA )
 //{
 //    list<Articulos>::iterator it = clienteA.lista_Art_Pedidos.begin();
 //    list<Articulos>::iterator it2 = list_stock.begin(); //no se crea la lista de stock
@@ -51,14 +52,21 @@ stock::~stock() {
 //    {
 //        for (int j = 0; j < N1; j++)
 //        {
-//            if (it == it2)
-//                return true;
-//            else
-//                return false;
-//
+//            if (it->get_nombre_art()==it2->get_nombre_art())
+//            {
+//                if (it->get_Cant_art() <= it2->get_Cant_art() )
+//                {
+//                    it++;
+//                     break; //encuntro el Articulo en Stock entoces paso el proximo articulo
+//                }
+//            }
 //            it2++;
 //        }
-//        it++;
+//        if (it2 == list_stock.end()) {
+//            return false; //no encotre el articulo buscado
+//        }
+//
+//       
 //    }
-//    
+//    return true; //se encontraron todos los articulos pedidos en el stock
 //}
