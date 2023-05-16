@@ -17,30 +17,27 @@ public:
     ~Articulos();
 
      string get_nombre_art();
+     virtual float get_Tam();
+     virtual float get_precio();
+     virtual unsigned int get_Cant_art();
 
    virtual void set_cant_art(unsigned int Cant);
-
-
    virtual void set_precio(unsigned int precio);
    virtual void set_cambio(bool cambio);
-
-    //bool existe_art(string tipoart); este metodo lo sacamos porque la funcion de esta ya la cumple busacrart en stock 
-
-   virtual float get_Tam() ;
-
-   virtual float get_precio() ;
-
-   virtual unsigned int get_Cant_art() ;
-
+   
    Articulos& operator=(const Articulos& otro);
+  
+   //bool existe_art(string tipoart); este metodo lo sacamos porque la funcion de esta ya la cumple busacrart en stock 
+
+  
 
 
 protected:
-    const string Nombre_art;
+         const string Nombre_art;
     unsigned int Cant_art_pedido;
     unsigned int Precio;
-    const float Tamanyo;
-    const string Categoria_articulo;
+         const float Tamanyo;
+         const string Categoria_articulo;
     bool Cambio;
 
 

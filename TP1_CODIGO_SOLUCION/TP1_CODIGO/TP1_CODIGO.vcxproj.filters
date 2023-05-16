@@ -119,7 +119,7 @@
     <ClInclude Include="Model\stock.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Prueba.h">
+    <ClInclude Include="Bibliotecas.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Excero.h">

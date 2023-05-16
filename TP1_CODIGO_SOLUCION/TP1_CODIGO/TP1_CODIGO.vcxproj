@@ -176,7 +176,7 @@
     <ClInclude Include="Model\Repuestos.h" />
     <ClInclude Include="Model\Servicio_cerrajeria.h" />
     <ClInclude Include="Model\stock.h" />
-    <ClInclude Include="Prueba.h" />
+    <ClInclude Include="Bibliotecas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

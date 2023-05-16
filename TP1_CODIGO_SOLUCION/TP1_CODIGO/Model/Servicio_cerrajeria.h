@@ -20,17 +20,17 @@ public:
  ~Servicio_cerrajeria();
     
     
-string  get_tipo_llave();
-    
+string  get_tipo_llave();  
 string get_tipo_serv();
+bool get_permiso();
+
 void realizar_trabajo() override;
 void set_permiso(bool permiso);
-bool get_permiso();
 bool Permiso_llave();
 
 protected: 
-     const string tipo_servicio;//venta de llaves o de cerradura
-     const string tipo_de_llave;//magnetica o normal, en caso de que sea cerradura va "vacio"
+        const string tipo_servicio;//venta de llaves o de cerradura
+        const string tipo_de_llave;//magnetica o normal, en caso de que sea cerradura va "vacio"
      bool tengo_permiso;
     
 

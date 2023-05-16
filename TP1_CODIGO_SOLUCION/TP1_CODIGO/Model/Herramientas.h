@@ -21,20 +21,16 @@ public:
     
 
 void set_Precio_D( unsigned int p_D);
-    
-
 void set_Precio_s(unsigned int p_s);
-    
-
 void set_tiempo( unsigned int t_a);
+void set_Alquiler(bool Alquiler);
+void set_Estado_art_a_alquilado(bool estado_art_Alquilado);
 
-unsigned int get_Precio_S();
-    
+unsigned int get_Precio_S();   
 unsigned int get_total_alquilar();
 bool get_Alquiler();
-void set_Alquiler(bool Alquiler);
 bool get_Estado_art_a_alquilado();
-void set_Estado_art_a_alquilado(bool estado_art_Alquilado);
+
 
 protected: 
     bool Alquiler;// true se puede alquilar false no se puede

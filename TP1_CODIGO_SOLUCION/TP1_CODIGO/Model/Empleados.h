@@ -15,16 +15,16 @@ public:
 Empleados(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos);
 ~Empleados();
     
-virtual string get_name();
-    
-virtual string get_surname();
-    
+virtual string get_name();    
+virtual string get_surname();   
 virtual string get_dni();
     
 virtual void realizar_trabajo();
     
 virtual unsigned int get_sueldos();
+
 bool operator==(const Empleados& otros) const;
+
 protected: 
         const string Tipo_empleado;
         const string Nombre;

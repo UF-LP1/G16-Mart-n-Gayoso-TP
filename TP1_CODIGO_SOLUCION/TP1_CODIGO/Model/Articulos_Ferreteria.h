@@ -9,7 +9,6 @@
 #include <iostream>
 using namespace std;
 #include"Especificaciones.h";
-
 #include "Articulos.h"
 
 

@@ -1,4 +1,4 @@
-#include"Prueba.h" 
+#include"Bibliotecas.h" 
 using namespace std;
 
 int main()
