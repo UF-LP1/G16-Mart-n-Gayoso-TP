@@ -31,6 +31,11 @@ void set_tiempo( unsigned int t_a);
 unsigned int get_Precio_S();
     
 unsigned int get_total_alquilar();
+bool get_Alquiler();
+void set_Alquiler(bool Alquiler);
+bool get_Estado_art_a_alquilado();
+void set_Estado_art_a_alquilado(bool estado_art_Alquilado);
+
 protected: 
     bool Alquiler;// true se puede alquilar false no se puede
     unsigned int precio_seguro;

@@ -24,6 +24,7 @@ string  get_tipo_llave();
     
 string get_tipo_serv();
 void realizar_trabajo() override;
+void set_permiso(bool permiso);
 bool get_permiso();
 bool Permiso_llave();
 

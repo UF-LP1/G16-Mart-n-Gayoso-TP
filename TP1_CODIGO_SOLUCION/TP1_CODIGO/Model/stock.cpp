@@ -14,9 +14,17 @@ stock::stock()
     this->Nombre_art_pedido ="";
 }
 
-void stock::agregar_stock(list<Articulos> art)
+void stock::agregar_stock(const list<Articulos>& art)
 {
     list_stock = art;
+}
+
+stock& stock::operator=(const list<Articulos>& art)
+{
+    
+        list_stock = art;
+        return *this;
+    
 }
 
 

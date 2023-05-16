@@ -21,7 +21,7 @@ public:
     ~stock();
 
 
- // bool buscar_art(Cliente clienteA);
+ // bool buscar_art(Cliente clienteA);//no la usamos mas
 
   friend unsigned int Cliente::generarPresupuestos(stock stock1);     
 
@@ -34,13 +34,10 @@ public:
 
     list<Articulos>list_stock;
 
-    void agregar_stock( list<Articulos> art);
-public:
-    stock& operator=( const list<Articulos>& art)
-    {
-        list_stock = art;
-        return *this;
-    }
+    void agregar_stock( const list<Articulos>& art);
+
+    stock& operator=(const list<Articulos>& art);
+   
     
 protected:
     string Nombre_art_pedido;

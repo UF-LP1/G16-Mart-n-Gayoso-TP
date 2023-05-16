@@ -24,7 +24,7 @@ virtual string get_dni();
 virtual void realizar_trabajo();
     
 virtual unsigned int get_sueldos();
-
+bool operator==(const Empleados& otros) const;
 protected: 
         const string Tipo_empleado;
         const string Nombre;

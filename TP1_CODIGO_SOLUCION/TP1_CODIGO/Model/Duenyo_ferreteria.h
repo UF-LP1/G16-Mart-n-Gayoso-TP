@@ -18,11 +18,12 @@ public:
 Duenyo_ferreteria();
 ~Duenyo_ferreteria();
     
+void agregarEmp(Empleados Emp_Agregar);
 
-void contratar(const Empleados& empleado);
+void contratar(Empleados& empleado);
     
 
-void despedir(const Empleados& empleado);
+void despedir(Empleados& empleado); 
     
 
 void set_cobrar(unsigned int _A_cobrar);
@@ -38,8 +39,7 @@ void set_pagar_seguro(unsigned int seguro);
 
 
 
-friend list<Empleados> operator+(list<Empleados>list_empleados, const Empleados& empleado);
-friend list<Empleados> operator-(list<Empleados>list_empleados, const Empleados& empleado);
+
 
 
 
@@ -51,15 +51,5 @@ protected:
 };
 
 
-list<Empleados> operator+(list<Empleados> list_empleados, const Empleados& empleado)
-{
-    list_empleados.push_back(empleado);
-    return list_empleados;
-}
-inline list<Empleados> operator-(list<Empleados> list_empleados, const Empleados& empleado)
-{
-    list_empleados.remove(empleado);
-    return list_empleados;
-}
 
 #endif //_DUENYO_FERRETERIA_H

@@ -43,6 +43,17 @@ unsigned int Articulos::get_Cant_art()
     return this->Cant_art_pedido;
 }
 
+Articulos& Articulos::operator=(const Articulos& otro)
+{
+    if (this!= &otro)
+    {
+        this->Cant_art_pedido = otro.Cant_art_pedido;
+        this->Precio = otro.Precio;
+        this->Cambio = otro.Cambio;
+    }
+    return *this;
+}
+
 
 
 /*bool Articulos::existe_art(string tipoart) {

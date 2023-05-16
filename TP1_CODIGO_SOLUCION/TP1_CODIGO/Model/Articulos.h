@@ -32,6 +32,7 @@ public:
 
    virtual unsigned int get_Cant_art() ;
 
+   Articulos& operator=(const Articulos& otro);
 
 
 protected:

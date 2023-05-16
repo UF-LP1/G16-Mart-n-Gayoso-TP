@@ -26,7 +26,7 @@ bool Ferreteria::ingreso_horario(time_t tiempo,string Dias)
       localtime_s(&horaActual,&tiempo); 
     
     
-    tm horaAperturaM = { 0, 30, 7 }; 
+    tm horaAperturaM = { 0, 30, 00 }; 
     tm horaCierreM = { 0, 0, 13 };
     tm horaAperturaT = { 0, 0, 17 };
     tm horaCierreT = {0,0,20};

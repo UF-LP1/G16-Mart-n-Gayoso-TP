@@ -39,6 +39,26 @@ unsigned int Herramientas::get_total_alquilar() {
     return (this->tiempo_a_alquilar*this->precio_alquiler)+this->precio_seguro; //no estoy segura que esto se pueda
 }
 
+bool Herramientas::get_Alquiler()
+{
+    return this->Alquiler;
+}
+
+void Herramientas::set_Alquiler(bool Alquiler)
+{
+    this->Alquiler = Alquiler;
+}
+
+bool Herramientas::get_Estado_art_a_alquilado()
+{
+    return this->Estado_art_a_alquilado;
+}
+
+void Herramientas::set_Estado_art_a_alquilado(bool estado_art_Alquilado)
+{
+    this->Estado_art_a_alquilado = estado_art_Alquilado;
+}
+
 
 
 Herramientas::~Herramientas() {

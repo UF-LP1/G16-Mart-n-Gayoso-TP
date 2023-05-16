@@ -20,6 +20,11 @@ void Servicio_cerrajeria:: realizar_trabajo() {
 	return;
 }
 
+void Servicio_cerrajeria::set_permiso(bool permiso)
+{
+	this->tengo_permiso = permiso;
+}
+
 bool Servicio_cerrajeria::get_permiso()
 {
 	return this->tengo_permiso;
@@ -27,11 +32,11 @@ bool Servicio_cerrajeria::get_permiso()
 
 bool Servicio_cerrajeria::Permiso_llave()
 {
-	if (this->get_tipo_llave() == "Magnetica")
+	if (this->get_tipo_llave() == "magnetica")
 	{
 		if (this->get_permiso() == true)
 		{
-			cout << "Hago la llave" << endl;
+			cout << "Tengo permiso para hacer la llave" << endl;
 			return true;
 		}
 	}

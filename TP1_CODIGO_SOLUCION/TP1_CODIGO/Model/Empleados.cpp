@@ -36,6 +36,13 @@ unsigned int Empleados::get_sueldos() {
     return this->Sueldos;
 }
 
+
+bool Empleados::operator==(const Empleados& otros) const
+{
+    return(this->Dni == otros.Dni);
+}
+
+
 void Empleados::realizar_trabajo() {
     return;
 }

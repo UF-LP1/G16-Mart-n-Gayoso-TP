@@ -65,7 +65,7 @@ Cliente::~Cliente() {
         }
         if (it2 == stock1.list_stock.end())
         {
-            cout << "El Articulo " << it->get_nombre_art() << "No esta en el stock actualmente" << endl;
+            cout << "El Articulo " << it->get_nombre_art()<<" " << "No esta en el stock actualmente" << endl;
         }
     }
 
