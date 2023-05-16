@@ -20,6 +20,24 @@ void Servicio_cerrajeria:: realizar_trabajo() {
 	return;
 }
 
+bool Servicio_cerrajeria::get_permiso()
+{
+	return this->tengo_permiso;
+}
+
+bool Servicio_cerrajeria::Permiso_llave()
+{
+	if (this->get_tipo_llave() == "Magnetica")
+	{
+		if (this->get_permiso() == true)
+		{
+			cout << "Hago la llave" << endl;
+			return true;
+		}
+	}
+	return false;
+}
+
 string  Servicio_cerrajeria::get_tipo_serv() {
     return this->tipo_servicio;
 }

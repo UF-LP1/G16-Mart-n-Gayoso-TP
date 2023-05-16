@@ -20,7 +20,7 @@ Duenyo_ferreteria::Duenyo_ferreteria() {
 
 void Duenyo_ferreteria::set_cobrar( unsigned int _A_cobrar) {
     this->A_cobrar = _A_cobrar; 
-    cout << "El duenyo recibe del cliente:$  " << this->A_cobrar ;
+    cout << "El duenyo recibe del cliente:$  " << this->A_cobrar <<endl;
 }
 
 
@@ -28,7 +28,7 @@ void Duenyo_ferreteria::set_cobrar( unsigned int _A_cobrar) {
 //plata c es la plata que nos da el cliente y la otra es lo que tiene que pagar
 void Duenyo_ferreteria::set_pagar_Articulos(unsigned int platac, unsigned int _A_pagar) {
     this->A_pagar = platac - _A_pagar;
-    cout << "El Duenyo le da el vuelto al cliente, vuelto: $ " << this->A_pagar;
+    cout << "El Duenyo le da el vuelto al cliente, vuelto: $ " << this->A_pagar << endl;
 }
 
 void Duenyo_ferreteria::set_pagar_seguro(unsigned int seguro)

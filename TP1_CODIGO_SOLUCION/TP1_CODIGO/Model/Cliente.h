@@ -1,6 +1,7 @@
 /**
  * Project Untitled
  */
+#pragma once
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
@@ -8,7 +9,6 @@
 #include"Articulos.h"
 #include <iostream>
 #include <list>
-
 
 class stock;//lo buscamos y para hacer el friend nos decia que teniamos que hacer esta "Forward declaration" si no nos funcionaba
 

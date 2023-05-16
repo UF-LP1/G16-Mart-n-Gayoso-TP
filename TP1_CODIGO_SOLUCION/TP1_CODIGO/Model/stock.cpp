@@ -3,9 +3,9 @@
  */
 
 
-
-#include "stock.h"
 #include "Cliente.h"
+#include "stock.h"
+
 using namespace std;
 
 stock::stock()

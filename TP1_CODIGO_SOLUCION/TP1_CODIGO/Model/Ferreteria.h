@@ -22,8 +22,7 @@ public:
 
 void set_direccion( string Dirreccion);
     
-
-//bool ingreso_horario(time_t tiempo); //no se como arreglar esto del tiempo corte como poner con el ctime 
+bool ingreso_horario(time_t tiempo,string Dias); //no se como arreglar esto del tiempo corte como poner con el ctime 
     
 string get_nombre();
 

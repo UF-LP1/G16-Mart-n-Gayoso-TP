@@ -5,6 +5,7 @@
 
 #include "Cliente.h"
 #include "stock.h"
+
 using namespace std;
 
 

@@ -1,58 +1,56 @@
-#include"Model/Articulos.h"
-#include"Model/Cliente.h"
-#include "Model/Stock.h"
-#include "Model/Ferreteria.h"
-#include <list>
-#include"Model/Articulos_CocinayBano_Bazar.h"
-#include"Model/Articulos_Electricidad.h"
-#include"Model/Articulos_Ferreteria.h"
-#include "Model/Empleados.h"
-#include"Model/Despachante.h"
-#include "Model/Plomero.h"
-#include "Model/Servicio_cerrajeria.h"
-#include "Model/Herramientas.h" 
-#include "Model/Repuestos.h"
-#include"Model/Duenyo_ferreteria.h"
-#include"Model/Ferreteria.h"
-
+#include"Prueba.h" 
 using namespace std;
 
 int main()
 {
-	unsigned int PresupuestoTotal;
-	unsigned int PlataCliente; //es la plata con la que nos paga el cliente
-	unsigned int PlataSeguro;
-	stock* stockp = new stock();
 
-	std::list<Articulos> Articulos_stock;
 	
-	
-	Articulos A1("Clavo", 0.5, "Ferreteria");
-
-	A1.set_cant_art(100);
-	A1.set_precio(70);
-	Articulos_stock.push_back(A1);
-
-	time_t now = time(0);//tiempo actual
-
+//Creamos la Ferreteria y Duenyo
+	Duenyo_ferreteria* ELDuenyo = new Duenyo_ferreteria(); 
 	Ferreteria* Ferreteria1 = new Ferreteria("FERRETUTI");
 	Ferreteria1->set_direccion("Callao 1345");
 	cout << Ferreteria1->get_nombre() << endl;
+
+//"Llenamos el stock"
+	stock* stockp = new stock(); 
+	std::list<Articulos> Articulos_stock;
 	
-	//if (Ferreteria1->ingreso_horario(now) == true)//me fijo que este abierta
-	//{
+	Articulos_Ferreteria A1("Clavo", 0.5, "Ferreteria", "Metal", TipoF1);
+	Articulos_CocinayBano_Bazar A2("Cortina", 200.0, "cocinabano", Amarillo);
+	Articulos_Electricidad A3("Enchufe", 3.9, "Electricidad", Tipo1, Nopedidol);
+	Herramientas A4("Pulidora", 90, "Herramientas");
 
+	A1.set_cant_art(100);
+	Articulos_stock.push_back(A1);
 
+	A2.set_cant_art(2);
+	Articulos_stock.push_back(A2);
 
-		//stockp->agregar_stock(Articulos_stock);
-		Duenyo_ferreteria* ELDuenyo = new Duenyo_ferreteria();
-		Cliente* Cliente1 = new Cliente("Sol", "PPPP33", "66739973");
+	A3.set_cant_art(2);
+	Articulos_stock.push_back(A3);
+
+	A4.set_cant_art(2);
+	Articulos_stock.push_back(A4);
+
+	stockp->agregar_stock(Articulos_stock);
+
+//Ingresamos Dia y "tomamos hora"
+
+	time_t now = time(0);//tiempo actual
+	string Dia;//ingresamos el dia nosotros
+	cout << "DIA: " << Dia;
+
+//Creamos Cliente
+	Cliente* Cliente1 = new Cliente("Sol", "PPPP33", "66739973");
+
+	if (Ferreteria1->ingreso_horario(now,Dia) == true)//me fijo que este abierta
+	{
+	//Articulos que pide el cliente, con sus set
 		Articulos* Articulo1 = new Articulos_Ferreteria("Clavo", 0.5, "Ferreteria", "Metal", TipoF1);
 		Articulos* Articulo2 = new Herramientas("Pulidora", 90, "Herramientas");
-		Articulos* Articulo4 = new Articulos_CocinayBano_Bazar("Cortina", 200.0, "cocinabano", Amarillo);
-		Articulos* Articulo5 = new Articulos_Electricidad("Lampara", 34.9, "Electricidad", Nopedidoe, LED);
-		Articulos* Articulo6 = new Articulos_Electricidad("Enchufe", 3.9, "Electricidad", Tipo1, Nopedidol);
-
+		Articulos* Articulo3 = new Articulos_CocinayBano_Bazar("Cortina", 200.0, "cocinabano", Amarillo);
+		Articulos* Articulo4 = new Articulos_Electricidad("Lampara", 34.9, "Electricidad", Nopedidoe, LED);
+		Articulos* Articulo5 = new Articulos_Electricidad("Enchufe", 3.9, "Electricidad", Tipo1, Nopedidol);
 
 
 		Articulo1->set_cant_art(30);
@@ -74,25 +72,45 @@ int main()
 		}
 
 
-		Articulo4->set_cant_art(1);
-		Articulo4->set_precio(1000);
+		Articulo3->set_cant_art(1);
+		Articulo3->set_precio(1000);
+		Articulo3->set_cambio(true);
+
+		Articulo4->set_cant_art(2);
+		Articulo4->set_precio(2500);
 		Articulo4->set_cambio(true);
 
-		Articulo5->set_cant_art(2);
-		Articulo5->set_precio(2500);
-		Articulo5->set_cambio(true);
+		Articulo5->set_cant_art(3);
+		Articulo5->set_precio(40);
+		Articulo5->set_cambio(false);
 
-		Articulo6->set_cant_art(3);
-		Articulo6->set_precio(40);
-		Articulo6->set_cambio(false);
+		//agregamos los articulos pediods por el cliente
+				Cliente1->agregarArt(*Articulo1);
+				Cliente1->agregarArt(*Articulo2);
+				Cliente1->agregarArt(*Articulo3);
+				Cliente1->agregarArt(*Articulo4);
+				Cliente1->agregarArt(*Articulo5);
 
-		Cliente1->agregarArt(*Articulo1);
-		Cliente1->agregarArt(*Articulo2);
-		Cliente1->agregarArt(*Articulo4);
-		Cliente1->agregarArt(*Articulo5);
-		Cliente1->agregarArt(*Articulo6);
+		//Generamos presupuesto y revisamos de tener todo en stock
+			unsigned int PresupuestoTotal = 0;
+			unsigned int PlataCliente = 0; //es la plata con la que nos paga el cliente
+			unsigned int PlataSeguro;
+
+			PresupuestoTotal = Cliente1->generarPresupuestos(*stockp);
+				ELDuenyo->set_cobrar(PresupuestoTotal);//aca se le informa al cliente cuanto abonar
+				cout << "Con cuanto desea abonar: " << PlataCliente << endl;
+
+			ELDuenyo->set_pagar_Articulos(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
+				PlataSeguro = Herramienta1->get_Precio_S();
+				ELDuenyo->set_pagar_seguro(PlataSeguro);//esta devuelve la plata del seguro y por eso lo hacemos en otr funcion
+		
+			//imprimimos como pureba un Articulo y al cliente
+				cout << Articulo1->get_nombre_art() << " " << Articulo1->get_Tam() << " " << Articulo1->get_Cant_art() << " " << Articulo1->get_precio() << endl;
+				cout << Cliente1->get_name() << " " << Cliente1->get_direc() << " " << Cliente1->get_tel() << endl;
 
 
+//Ahora vamos a probar las fucniones relacionasda con el Duenyo y los empleados
+	//Creamos un Empleado de cada tipo
 		Empleados* Empleado1 = new Plomero("Plomero", "Pedro", "Perez", "35241975", 100000);
 		Plomero* Plomero1 = dynamic_cast<Plomero*>(Empleado1);
 
@@ -116,38 +134,36 @@ int main()
 			cout << "Tipo servicio: " << Cerrajero1->get_tipo_serv() << endl << "Tipo llave: " << Cerrajero1->get_tipo_llave() << endl;
 		}
 
+		
 
-		Repuestos* Repuesto1 = new Repuestos("Clavo", 0.3);
+		//imprimimos como pureba un Empleado
+			cout << Empleado1->get_name() << " " << Empleado1->get_surname() << " " << Empleado1->get_dni() << " " << Empleado1->get_sueldos() << endl;
 
-
-		PresupuestoTotal = Cliente1->generarPresupuestos(*stockp);
-		ELDuenyo->set_cobrar(PresupuestoTotal);
-		ELDuenyo->set_pagar_Articulos(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
-		PlataSeguro = Herramienta1->get_Precio_S();
-		ELDuenyo->set_pagar_seguro(PlataSeguro);//esta devuelve la plata del seguro y por eso lo hacemos en otr funcion
-
-		cout << Articulo1->get_nombre_art() << " " << Articulo1->get_Tam() << " " << Articulo1->get_Cant_art() << " " << Articulo1->get_precio() << endl;
-		cout << Cliente1->get_name() << " " << Cliente1->get_direc() << " " << Cliente1->get_tel() << endl;
-		cout << Empleado1->get_name() << " " << Empleado1->get_surname() << " " << Empleado1->get_dni() << " " << Empleado1->get_sueldos() << endl;
-		cout << Repuesto1->get_tam() << endl;
+		//Funcion Virtual Heredada redefinida en c/u
 		Empleado1->realizar_trabajo();
 		Empleado2->realizar_trabajo();
 		Empleado3->realizar_trabajo();
 
-		Empleados* Empleado4 = new Plomero("Plomero", "Pablo", "Perez", "36740975", 100000);
+		Empleados* Empleado4 = new Plomero("Plomero", "Pablo", "Perez", "36740975", 100000); //Este lo creamos para contratarlo
+
 		ELDuenyo->contratar(*Empleado4);
 		ELDuenyo->despedir(*Empleado3);
 
+//Prueba Clase Respuestos
+		Repuestos* Repuesto1 = new Repuestos("Clavo", 0.3);
+		cout << Repuesto1->get_tam() << endl;
 
 
-		//cout << PresupuestoTotal;
+
+
+		
 
 
 		delete Cliente1;
 		delete Articulo1;
+		delete Articulo3;
 		delete Articulo4;
 		delete Articulo5;
-		delete Articulo6;
 		delete Empleado1;
 		delete Empleado2;
 		delete Empleado3;
@@ -156,13 +172,13 @@ int main()
 		delete Repuesto1;
 		delete ELDuenyo;
 		delete stockp;
-	/*}
-
+	
+}
 	else
 	{
 	cout << "ESTA CERRADO";
 	}
 
-	return 0;*/
+	return 0;
 }
 

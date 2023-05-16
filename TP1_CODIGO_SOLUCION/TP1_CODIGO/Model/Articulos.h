@@ -4,9 +4,10 @@
 
 #ifndef _ARTICULOS_H
 #define _ARTICULOS_H
+#include <list>
 #include <string>
 #include <iostream>
-#include <list>
+
 using namespace std;
 
 class Articulos {

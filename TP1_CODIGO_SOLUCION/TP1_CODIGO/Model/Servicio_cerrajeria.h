@@ -24,10 +24,13 @@ string  get_tipo_llave();
     
 string get_tipo_serv();
 void realizar_trabajo() override;
+bool get_permiso();
+bool Permiso_llave();
 
 protected: 
      const string tipo_servicio;//venta de llaves o de cerradura
      const string tipo_de_llave;//magnetica o normal, en caso de que sea cerradura va "vacio"
+     bool tengo_permiso;
     
 
 };

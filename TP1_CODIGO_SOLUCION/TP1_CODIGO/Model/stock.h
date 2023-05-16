@@ -1,12 +1,12 @@
 /**
  * Project Untitled
  */
-
+#pragma once
 #ifndef _STOCK_H
 #define _STOCK_H
-
-#include <string>
+#include "Cliente.h"
 #include"Articulos.h"
+#include <string>
 #include <algorithm>
 #include <list>
 
