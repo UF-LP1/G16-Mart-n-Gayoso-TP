@@ -4,6 +4,7 @@
 
 
 #include "Duenyo_ferreteria.h"
+
 #include <list> 
 
 /**
@@ -30,6 +31,11 @@ void Duenyo_ferreteria::set_cobrar( unsigned int _A_cobrar) {
 void Duenyo_ferreteria::set_pagar_Articulos(unsigned int platac, unsigned int _A_pagar) {
     this->A_pagar = platac - _A_pagar;
     cout << "El Duenyo le da el vuelto al cliente, vuelto: $ " << this->A_pagar << endl;
+   /* if (platac<0)
+    {
+      throw(NOcero); 
+    }*/
+    
 }
 
 void Duenyo_ferreteria::set_pagar_seguro(unsigned int seguro)

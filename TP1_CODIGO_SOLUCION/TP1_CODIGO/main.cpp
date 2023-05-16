@@ -167,14 +167,36 @@ int main()
 		Empleado2->realizar_trabajo();
 		Empleado3->realizar_trabajo();
 
-		
+	
+		try
+		{
+			Empleados* Empleado4 = new Plomero("Plomero", "Pablo", "Perez", "000000000", 100000); //Este lo creamos para contratarlo
+			Plomero* Plomero2 = dynamic_cast<Plomero*>(Empleado4);
+			ELDuenyo->contratar(*Empleado4);
+		}
+		catch (const std::exception& e)
+		{
+			cerr << "Error al momento de contratar al empleado: " << e.what() << endl;
+		}
+		try
+		{
 
-		Empleados* Empleado4 = new Plomero("Plomero", "Pablo", "Perez", "36740975", 100000); //Este lo creamos para contratarlo
-		Plomero* Plomero2 = dynamic_cast<Plomero*>(Empleado4);
+		}
+		catch (const std::exception&)
+		{
 
-		ELDuenyo->contratar(*Empleado4);
+		}
 
 		ELDuenyo->despedir(*Empleado3);
+		try
+		{
+			ELDuenyo->set_pagar_Articulos(0, 100);
+		}
+		catch (const std::exception& e)
+		{
+			cerr << "Error: " << e.what() << endl;
+
+		}
 
 //Prueba Clase Respuestos//revisar 
 		Repuestos* Repuesto1 = new Repuestos("Clavo", 0.3);
@@ -194,7 +216,7 @@ int main()
 		delete Empleado1;
 		delete Empleado2;
 		delete Empleado3;
-		delete Empleado4;
+	
 		delete Herramienta1;
 		delete Repuesto1;
 		delete ELDuenyo;

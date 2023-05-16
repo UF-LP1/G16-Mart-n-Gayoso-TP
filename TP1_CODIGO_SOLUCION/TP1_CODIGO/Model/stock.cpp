@@ -22,9 +22,17 @@ void stock::agregar_stock(const list<Articulos>& art)
 stock& stock::operator=(const list<Articulos>& art)
 {
     
-        list_stock = art;
+       
+       
+        try
+        {
+            list_stock = art;
+        }
+        catch (...)
+        {
+            cerr << "No se pudo asignar la lista de articulos al stock";
+        }
         return *this;
-    
 }
 
 

@@ -6,11 +6,13 @@
 #ifndef _DUENYO_FERRETERIA_H
 #define _DUENYO_FERRETERIA_H
 #include <string>
+#include <exception>
 #include <iostream>
 using namespace std;
 #include"Articulos.h";
 #include"Empleados.h"
 #include"Herramientas.h"
+
 
 class Duenyo_ferreteria {
 public: 

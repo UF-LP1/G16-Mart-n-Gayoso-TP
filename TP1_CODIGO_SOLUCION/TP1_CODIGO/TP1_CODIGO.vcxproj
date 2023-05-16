@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Excero.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model\Articulos.cpp" />
     <ClCompile Include="Model\Articulos_CocinayBano_Bazar.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="Model\stock.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Excero.h" />
     <ClInclude Include="Model\Articulos.h" />
     <ClInclude Include="Model\Articulos_CocinayBano_Bazar.h" />
     <ClInclude Include="Model\Articulos_Electricidad.h" />
