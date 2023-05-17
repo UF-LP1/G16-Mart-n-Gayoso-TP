@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Excero.cpp" />
+    <ClCompile Include="ExpDesp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model\Articulos.cpp" />
     <ClCompile Include="Model\Articulos_CocinayBano_Bazar.cpp" />
@@ -152,12 +153,12 @@
     <ClCompile Include="Model\Ferreteria.cpp" />
     <ClCompile Include="Model\Herramientas.cpp" />
     <ClCompile Include="Model\Plomero.cpp" />
-    <ClCompile Include="Model\Repuestos.cpp" />
     <ClCompile Include="Model\Servicio_cerrajeria.cpp" />
     <ClCompile Include="Model\stock.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Excero.h" />
+    <ClInclude Include="ExpDesp.h" />
     <ClInclude Include="Model\Articulos.h" />
     <ClInclude Include="Model\Articulos_CocinayBano_Bazar.h" />
     <ClInclude Include="Model\Articulos_Electricidad.h" />
@@ -173,7 +174,6 @@
     <ClInclude Include="Model\Herramientas.h" />
     <ClInclude Include="Model\lampara.h" />
     <ClInclude Include="Model\Plomero.h" />
-    <ClInclude Include="Model\Repuestos.h" />
     <ClInclude Include="Model\Servicio_cerrajeria.h" />
     <ClInclude Include="Model\stock.h" />
     <ClInclude Include="Bibliotecas.h" />

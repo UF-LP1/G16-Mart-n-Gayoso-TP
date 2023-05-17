@@ -29,12 +29,13 @@ void Duenyo_ferreteria::set_cobrar( unsigned int _A_cobrar) {
 
 //plata c es la plata que nos da el cliente y la otra es lo que tiene que pagar
 void Duenyo_ferreteria::set_pagar_Articulos(unsigned int platac, unsigned int _A_pagar) {
-    this->A_pagar = platac - _A_pagar;
+    this->A_pagar = (platac - _A_pagar);
+    if (platac < _A_pagar){
+        throw NOcero();
+    this->A_pagar = 0;
+    }
     cout << "El Duenyo le da el vuelto al cliente, vuelto: $ " << this->A_pagar << endl;
-   /* if (platac<0)
-    {
-      throw(NOcero); 
-    }*/
+    
     
 }
 
@@ -50,17 +51,17 @@ void Duenyo_ferreteria::agregarEmp(Empleados Emp_Agregar)
 
 }
 
-void Duenyo_ferreteria::contratar(Empleados& empleado) {
+void Duenyo_ferreteria::contratar(Empleados empleado) {
     list_empleados.push_back(empleado);
     cout << "Empleado "<< empleado.get_name() << " contratado "<<endl;
     
 }
 
-void Duenyo_ferreteria::despedir( Empleados &empleado)
+void Duenyo_ferreteria::despedir( Empleados empleado)
 {
     list<Empleados> copia = list_empleados;
-
-    for (auto it = copia.begin(); it != copia.end(); it++)
+    list<Empleados>::iterator it;
+    for ( it = copia.begin(); it != copia.end(); it++)
     {
         if (*it == empleado)
         {
@@ -70,16 +71,12 @@ void Duenyo_ferreteria::despedir( Empleados &empleado)
             
         }
     }
+    if (it==copia.end())
+    {
+        throw ExpDesp();
+    }
     
 }
-
-
-
-//void Duenyo_ferreteria::Vender(Articulos) {
-//    return;
-//}
-
-
 
 
 Duenyo_ferreteria::~Duenyo_ferreteria() {

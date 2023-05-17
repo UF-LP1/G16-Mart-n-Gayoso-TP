@@ -5,9 +5,11 @@ using namespace std;
 
 Articulos::Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_articulo) : Nombre_art(_Nombre_art), Tamanyo(_Tamanyo), Categoria_articulo(_Categoria_articulo)
 {
+  
     this->Cant_art_pedido = 0;
     this->Precio = 0;
     this->Cambio = false; 
+    
 }
 
  string Articulos::get_nombre_art() {
@@ -43,6 +45,8 @@ unsigned int Articulos::get_Cant_art()
     return this->Cant_art_pedido;
 }
 
+
+
 Articulos& Articulos::operator=(const Articulos& otro)
 {
     if (this!= &otro)
@@ -56,19 +60,6 @@ Articulos& Articulos::operator=(const Articulos& otro)
 
 
 
-/*bool Articulos::existe_art(string tipoart) {
-
-    if (tipoart == this->Nombre_art)
-        return true;
-    else
-        return false;
-}*/
-
-
-
-
-
-
-
-
-Articulos::~Articulos() {}
+Articulos::~Articulos() {
+    
+}

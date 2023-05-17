@@ -2,5 +2,5 @@
 
 const char* NOcero::what() const throw()
 {
-    return "No puede dar menos de $0 para pagar ";
+    return "No puede dar menos de lo que debe pagar, no fiamos! ";
 }

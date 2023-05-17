@@ -12,6 +12,7 @@ using namespace std;
 
 Cliente::Cliente(string nombre_cli, string direc_cli, string tel_cli) :Nombre_cliente(nombre_cli), Direc_cliente(direc_cli), Telefono_cliente(tel_cli)
 {
+    contclientes++;
 }
 
 
@@ -28,6 +29,11 @@ string Cliente::get_tel() {
     return this->Telefono_cliente;
 }
 
+bool Cliente::get_foto()
+{
+    return this->fotorep;
+}
+
 
 
 void Cliente::agregarArt(Articulos Art_pedido)
@@ -36,12 +42,39 @@ void Cliente::agregarArt(Articulos Art_pedido)
 
 }
 
+const int Cliente::get_cantclientes()
+{
+    return contclientes;
+}
+int Cliente::contclientes = 0;
+
+std::string Cliente::to_string()
+{
+  stringstream salida;
+  salida << "Nombre cliente: " << this->Nombre_cliente << " Direccion cliente: " << this->Direc_cliente << " telefono " << this->Telefono_cliente;
+
+  
+
+    return salida.str();
+}
+
+void Cliente::imprimir()
+{
+    cout << this->to_string() << endl;
+}
+
 
 Cliente::~Cliente() {
+    contclientes--;
 
 }
 
- unsigned int Cliente::generarPresupuestos(stock stock1)
+void Cliente::set_foto(bool foto)
+{
+    this->fotorep = foto;
+}
+
+unsigned int Cliente::generarPresupuestos(stock stock1)
 {
     int i;
     int N = lista_Art_Pedidos.size();

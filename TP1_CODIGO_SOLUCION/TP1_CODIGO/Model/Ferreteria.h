@@ -8,6 +8,7 @@
 #include <string>
 #include <time.h>
 #include <iostream>
+#include "Cliente.h"
 #include "Articulos.h"
 #include "stock.h"
 
@@ -28,9 +29,12 @@ string get_nombre();
 
 
 
+
+
 protected: 
         const string Nombre;
     string Direccion;
+    
     
 
 };

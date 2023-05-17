@@ -1,18 +1,22 @@
-﻿  main.cpp
+﻿  Cliente.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(80,37): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(93,53): warning C4244: '+=': conversión de 'float' a 'unsigned int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(79,9): warning C4101: 'i': variable local sin referencia
+  Ferreteria.cpp
+  stock.cpp
+  main.cpp
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(10,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(11,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Ferreteria.h(11,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(12,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(20,95): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(53,101): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(54,102): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(202,53): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Cliente.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(47,37): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(60,53): warning C4244: '+=': conversión de 'float' a 'unsigned int'; posible pérdida de datos
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(46,9): warning C4101: 'i': variable local sin referencia
-  Ferreteria.cpp
-  stock.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(61,102): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(62,103): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(244,17): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(261,3): error C2146: error de sintaxis: falta ':' delante del identificador 'default'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(260,3): error C2360: la inicialización de 'Articulo6' se omite en la etiqueta 'case'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(251): message : vea la declaración de 'Articulo6'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(261,3): error C2361: la inicialización de 'Articulo6' se omite en la etiqueta 'default'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\main.cpp(251): message : vea la declaración de 'Articulo6'
   Generando código...
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Ferreteria.cpp(55): warning C4715: 'Ferreteria::ingreso_horario': no todas las rutas de acceso de control devuelven un valor
-  TP1_CODIGO.vcxproj -> C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\x64\Debug\TP1_CODIGO.exe

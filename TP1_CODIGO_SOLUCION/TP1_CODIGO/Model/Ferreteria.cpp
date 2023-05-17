@@ -28,11 +28,11 @@ bool Ferreteria::ingreso_horario(time_t tiempo,string Dias)
     
     tm horaAperturaM = { 0, 30, 7}; 
     tm horaCierreM = { 0, 0, 13 };
-    tm horaAperturaT = { 0, 0, 17 };
+    tm horaAperturaT = { 0, 0, 14 };
     tm horaCierreT = {0,0,20};
     tm horaAperturaS = {0,0,8};
 
-    if (Dias=="Lunes"|| Dias == "Martes" || Dias == "Miercoles" || Dias == "Jueves" || Dias == "Viernes")
+    if (Dias=="Lunes"|| Dias == "Martes" || Dias == "Miercoles" || Dias == "Jueves" || Dias == "Viernes" || Dias == "lunes" || Dias == "martes" || Dias == "miercoles" || Dias == "jueves" || Dias == "viernes")
     {
         if (horaActual.tm_hour >= horaAperturaM.tm_hour && horaActual.tm_hour < horaCierreM.tm_hour || horaActual.tm_hour >= horaAperturaT.tm_hour && horaActual.tm_hour < horaCierreT.tm_hour)
         {
@@ -40,7 +40,7 @@ bool Ferreteria::ingreso_horario(time_t tiempo,string Dias)
         }
     }
     
-    if (Dias == "Sabado")
+    if (Dias == "Sabado"||Dias=="sabado")
     {
         if ((horaActual.tm_hour >= horaAperturaS.tm_hour && horaActual.tm_hour < horaCierreM.tm_hour))
         {

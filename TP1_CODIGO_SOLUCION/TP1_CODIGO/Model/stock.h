@@ -21,14 +21,13 @@ public:
     ~stock();
 
 
- // bool buscar_art(Cliente clienteA);//no la usamos mas
+ 
 
   friend unsigned int Cliente::generarPresupuestos(stock stock1);     
 
     void set_nomb_art(string Nombre_art_ped);
     void set_cant_art(unsigned int Cant_art_s);
 
-    bool Cant_necesaria();//no la usamos
 
     list<Articulos>list_stock;
 

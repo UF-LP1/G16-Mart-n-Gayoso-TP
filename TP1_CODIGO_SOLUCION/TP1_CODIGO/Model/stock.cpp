@@ -46,9 +46,7 @@ void stock::set_cant_art(unsigned int Cant_art_s) {
 }
 
 
-bool stock::Cant_necesaria() {
-    return false;
-}
+
 
 
 

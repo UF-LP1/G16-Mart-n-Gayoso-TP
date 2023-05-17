@@ -13,6 +13,5 @@
 #include "Model/Plomero.h"
 #include "Model/Servicio_cerrajeria.h"
 #include "Model/Herramientas.h" 
-#include "Model/Repuestos.h"
 #include"Model/Duenyo_ferreteria.h"
 #include"Model/Ferreteria.h"
