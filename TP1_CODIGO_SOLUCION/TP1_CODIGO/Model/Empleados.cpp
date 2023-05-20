@@ -36,6 +36,16 @@ unsigned int Empleados::get_sueldos() {
     return this->Sueldos;
 }
 
+unsigned int Empleados::get_PrecServ()
+{
+    return this->PrecioServicio;
+}
+
+void Empleados::set_PrecServ(unsigned int _PrecServ)
+{
+    this->PrecioServicio = _PrecServ;
+}
+
 
 bool Empleados::operator==(const Empleados& otros) const
 {

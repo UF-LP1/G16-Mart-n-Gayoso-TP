@@ -13,6 +13,9 @@ using namespace std;
 Cliente::Cliente(string nombre_cli, string direc_cli, string tel_cli) :Nombre_cliente(nombre_cli), Direc_cliente(direc_cli), Telefono_cliente(tel_cli)
 {
     contclientes++;
+    
+    this->fotorep = false;
+   
 }
 
 
@@ -64,6 +67,8 @@ void Cliente::imprimir()
 }
 
 
+
+
 Cliente::~Cliente() {
     contclientes--;
 
@@ -73,6 +78,8 @@ void Cliente::set_foto(bool foto)
 {
     this->fotorep = foto;
 }
+
+
 
 unsigned int Cliente::generarPresupuestos(stock stock1)
 {

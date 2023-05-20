@@ -7,9 +7,7 @@
 
 #include <list> 
 
-/**
- * Duenyo_ferreteria implementation
- */
+
 
 
 Duenyo_ferreteria::Duenyo_ferreteria() {
@@ -21,14 +19,14 @@ Duenyo_ferreteria::Duenyo_ferreteria() {
 
 void Duenyo_ferreteria::set_cobrar( unsigned int _A_cobrar) {
     this->A_cobrar = _A_cobrar; 
-    cout << "El duenyo le cobra al cliente:$  " << this->A_cobrar <<endl;
+    cout << "El duenyo le cobra por el total de Articulos tanto comprados,repuestos o cambios al cliente:$  " << this->A_cobrar <<endl;
 }
 
 
 
 
 //plata c es la plata que nos da el cliente y la otra es lo que tiene que pagar
-void Duenyo_ferreteria::set_pagar_Articulos(unsigned int platac, unsigned int _A_pagar) {
+void Duenyo_ferreteria::set_pagar(unsigned int platac, unsigned int _A_pagar) {
     this->A_pagar = (platac - _A_pagar);
     if (platac < _A_pagar){
         throw NOcero();

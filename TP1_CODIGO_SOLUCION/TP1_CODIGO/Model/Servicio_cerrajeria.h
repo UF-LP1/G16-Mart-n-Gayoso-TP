@@ -16,7 +16,7 @@ class Servicio_cerrajeria: public Empleados {
 public: 
     
 
- Servicio_cerrajeria(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos, string tipo_serv,  string tipo_llave);
+ Servicio_cerrajeria(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos);
  ~Servicio_cerrajeria();
     
     
@@ -24,13 +24,16 @@ string  get_tipo_llave();
 string get_tipo_serv();
 bool get_permiso();
 
+void set_tipoLlave(string tipoL);
+void set_tipoServ(string tipoS);
+
 void realizar_trabajo() override;
 void set_permiso(bool permiso);
 bool Permiso_llave();
 
 protected: 
-        const string tipo_servicio;//venta de llaves o de cerradura
-        const string tipo_de_llave;//magnetica o normal, en caso de que sea cerradura va "vacio"
+         string tipo_servicio;//venta de llaves o de cerradura
+        string tipo_de_llave;//magnetica o normal, en caso de que sea cerradura va "vacio"
      bool tengo_permiso;
     
 

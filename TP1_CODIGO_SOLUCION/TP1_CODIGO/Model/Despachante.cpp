@@ -17,9 +17,10 @@
 
 
 
-Despachante::Despachante(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos, unsigned int Cant_entreg, unsigned int Cant_prods): Empleados(_Tipo_empleado,_Nombre, _Apellido, _Dni, _Sueldos), Cantidad_entregas(Cant_entreg),Cantidad_productos_entregar(Cant_prods)
+Despachante::Despachante(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos): Empleados(_Tipo_empleado,_Nombre, _Apellido, _Dni, _Sueldos)
 {
-	
+	this->Cantidad_productos_entregar=0;
+
 }
 
 void Despachante::realizar_trabajo() {
@@ -31,9 +32,11 @@ Despachante::~Despachante() {
 
 }
 
-const unsigned int Despachante::get_Cant_entreg()
+
+
+void Despachante::set_Cant_prod_entreg(unsigned int C_productos_e)
 {
-	return this->Cantidad_entregas;
+	this->Cantidad_productos_entregar = C_productos_e;
 }
 
 unsigned int Despachante::get_cant_prod()

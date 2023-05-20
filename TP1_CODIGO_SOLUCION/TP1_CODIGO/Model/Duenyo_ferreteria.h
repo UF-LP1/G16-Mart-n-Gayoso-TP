@@ -32,7 +32,8 @@ void despedir(Empleados empleado);
     
 
 void set_cobrar(unsigned int _A_cobrar);
-void set_pagar_Articulos(unsigned int platac, unsigned int _A_pagar);
+
+void set_pagar(unsigned int platac, unsigned int _A_pagar);
 void set_pagar_seguro(unsigned int seguro);
     
 

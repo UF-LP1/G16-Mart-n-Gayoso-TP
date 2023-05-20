@@ -24,7 +24,7 @@ public:
 
    virtual void set_cant_art(unsigned int Cant);
    virtual void set_precio(unsigned int precio);
-   virtual void set_cambio(bool cambio);
+   
    
    Articulos& operator=(const Articulos& otro);
 
@@ -36,7 +36,7 @@ protected:
     unsigned int Precio;
          const float Tamanyo;
          const string Categoria_articulo;
-    bool Cambio;
+   
  
 
 

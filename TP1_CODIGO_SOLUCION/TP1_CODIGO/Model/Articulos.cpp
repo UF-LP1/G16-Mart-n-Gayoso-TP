@@ -8,7 +8,6 @@ Articulos::Articulos(string _Nombre_art, float _Tamanyo, string _Categoria_artic
   
     this->Cant_art_pedido = 0;
     this->Precio = 0;
-    this->Cambio = false; 
     
 }
 
@@ -26,10 +25,7 @@ void Articulos::set_precio(unsigned int precio) {
     this->Precio = precio;
 }
 
-void Articulos::set_cambio(bool cambio)
-{
-    this->Cambio = cambio;
-}
+
 
 void Articulos::set_cant_art(unsigned int Cant)
 {
@@ -53,7 +49,7 @@ Articulos& Articulos::operator=(const Articulos& otro)
     {
         this->Cant_art_pedido = otro.Cant_art_pedido;
         this->Precio = otro.Precio;
-        this->Cambio = otro.Cambio;
+        
     }
     return *this;
 }

@@ -23,6 +23,9 @@ virtual void realizar_trabajo();
     
 virtual unsigned int get_sueldos();
 
+virtual unsigned int get_PrecServ();
+virtual void set_PrecServ(unsigned int _PrecServ);
+
 bool operator==(const Empleados& otros) const;
 
 protected: 
@@ -32,6 +35,7 @@ protected:
         const string Dni;
     bool A_domicilio;
         const unsigned int Sueldos;
+    unsigned int PrecioServicio;
     
 
 };

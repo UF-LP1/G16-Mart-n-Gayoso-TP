@@ -1,4 +1,5 @@
 #include"Bibliotecas.h" 
+#include"FuncSwich.h"
 using namespace std;
 
 int main()
@@ -64,10 +65,10 @@ int main()
 		
 		Articulo1->set_cant_art(30);
 		Articulo1->set_precio(20);
-		Articulo1->set_cambio(false);
+		
 
 		Articulo2->set_cant_art(1);
-		Articulo2->set_cambio(false);
+		
 		
 
 		Herramientas* Herramienta1 = dynamic_cast<Herramientas*>(Articulo2);
@@ -89,15 +90,15 @@ int main()
 
 		Articulo3->set_cant_art(1);
 		Articulo3->set_precio(1000);
-		Articulo3->set_cambio(true);
+		
 
 		Articulo4->set_cant_art(2);
 		Articulo4->set_precio(2500);
-		Articulo4->set_cambio(true);
+		
 
 		Articulo5->set_cant_art(3);
 		Articulo5->set_precio(40);
-		Articulo5->set_cambio(false);
+		
 
 		Cliente1->set_foto(true);
 		if (Cliente1->get_foto() == true)
@@ -105,7 +106,7 @@ int main()
 			Articulos* Repuesto1 = new Articulos_Ferreteria("Tornillo", 1.5, "Ferreteria", "Metal", TipoF2);
 			Repuesto1->set_cant_art(1);
 			Repuesto1->set_precio(100);
-			Repuesto1->set_cambio(false);
+			
 			Cliente1->agregarArt(*Repuesto1);
 
 			delete Repuesto1;
@@ -129,7 +130,7 @@ int main()
 				cout << "Con cuanto desea abonar: ";
 				cin >> PlataCliente;
 
-			ELDuenyo->set_pagar_Articulos(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
+			ELDuenyo->set_pagar(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
 			
 			if (Herramienta1->get_Estado_art_a_alquilado() == true)//aca nos fijamos esto porque si no esta alquilado no hya seguro a devolver
 			{
@@ -155,15 +156,15 @@ int main()
 			Plomero1->set_Mantenimiento(false);
 		}
 
-		Empleados* Empleado2 = new Despachante("Despachante", "Daniela", "Diaz", "43950018", 70000, 10, 50);
+		Empleados* Empleado2 = new Despachante("Despachante", "Daniela", "Diaz", "43950018", 70000);
 		Despachante* Despachante1 = dynamic_cast<Despachante*>(Empleado2);
 		
 
 		if (Despachante1 != nullptr) {
-			cout << "Cant entregas: " << Despachante1->get_Cant_entreg() << endl << "Cant productos: " << Despachante1->get_cant_prod() << endl;
+			cout<< "Cant productos: " << Despachante1->get_cant_prod() << endl;
 		}
 
-		Empleados* Empleado3 = new Servicio_cerrajeria("Servicio de cerrajeria", "Sebastian", "Castro", "16000001", 90000, "llave", "magnetica");
+		Empleados* Empleado3 = new Servicio_cerrajeria("Servicio de cerrajeria", "Sebastian", "Castro", "16000001", 90000);
 		Servicio_cerrajeria* Cerrajero1 = dynamic_cast<Servicio_cerrajeria*>(Empleado3);
 		
 		
@@ -202,7 +203,7 @@ int main()
 
 			try
 			{
-				Empleados* Empleado5 = new Despachante("Despachante", "Daniel", "Dim", "34567897", 70000, 10, 50);
+				Empleados* Empleado5 = new Despachante("Despachante", "Daniel", "Dim", "34567897", 70000);
 				Despachante* Despachante2 = dynamic_cast<Despachante*>(Empleado5);
 				ELDuenyo->despedir(*Empleado5);
 			}
@@ -216,7 +217,7 @@ int main()
 		try
 		{
 			
-			ELDuenyo->set_pagar_Articulos(90, 100);
+			ELDuenyo->set_pagar(90, 100);
 		}
 		catch (const std::exception& e)
 		{
@@ -234,92 +235,53 @@ int main()
 		cin >> tel;
 
 	Cliente* Cliente2=new Cliente(name, direc, tel);
-
 	unsigned int k;
-	int i,num;
+	string rta,rta2,rta3,rta4;
 	cout << "cuantos articulos quiere comprar: ";
 	cin >> k;
+	bool _Cambio=false;
+	funcionSwich(k, Cliente2, ELDuenyo,_Cambio);
+	FuncSwich2(Cerrajero1, Despachante1,  k, Plomero1, ELDuenyo); 
 	
-	cout << "1=clavos, tamanyo 0.5" << endl << "2=clavos, tamanyo 1" << endl << "3= Pulidora" << endl << "4=Cortinas color Amarillo" << endl;
-	for ( i = 0; i < k; i++)
+	cout << "Esta buscando el repuesto de alguna pieza, respoda con si o no: "<<endl;
+	cin >> rta;
+	if (rta == "si" || rta == "Si" || rta == "SI")
 	{
-		cout << "Elija que articulo quiere: " << endl;
-		cin >> num;
-		switch (num)
+		cout << "Tiene foto de lo que esta buscando? respoda con si o no: " << endl;
+		cin >> rta2;
+		if (rta2 == "si" || rta2 == "Si" || rta2 == "SI")
 		{
-		case 1: 
-			Articulos * Articulo6 = new Articulos_Ferreteria("Clavo", 0.5, "Ferreteria", "Metal", TipoF1);
-			
-			unsigned int Cant_Art;
-			cout << " Ingrese la cantidad de articulos que quiere: ";
-			cin >> Cant_Art;
-			Articulo6->set_cant_art(Cant_Art);
-			Articulo6->set_precio(20);//estos los decimos nosotras porque vendria a ser algo que decide el duenyo
-			Articulo6->set_cambio(false);
-			Cliente2->agregarArt(*Articulo6);
-			break;
-
-		case 2:
-			Articulos * Articulo7 = new Articulos_Ferreteria("Clavo", 1, "Ferreteria", "Metal", TipoF1);
-			unsigned int Cant_Art,Precio;
-			bool Cambio;
-			cout << " Ingrese la cantidad de articulos que quiere: "<<endl;
-			cin >> Cant_Art;
-
-			Articulo7->set_cant_art(Cant_Art);
-			Articulo7->set_precio(20);
-			Articulo7->set_cambio(false);
-			Cliente2->agregarArt(*Articulo7);
-			break;
-
-		case 3:
-			Articulos * Articulo8 = new Herramientas("Pulidora", 90, "Herramientas");
-			Herramientas* Herramienta3 = dynamic_cast<Herramientas*>(Articulo8);
-			unsigned int tiempo;
-			cout << "Cuantos dias quiere alquilar la Herramineta? ";
-			cin >> tiempo;
-
-			Herramienta1->set_Alquiler(true);
-
-			if (Herramienta1 != nullptr)
+			Cliente2->set_foto(true);
+			if (Cliente2->get_foto() == true)
 			{
-				if (Herramienta1->get_Alquiler() == true)//me fijo que la herramienta se pueda alquilar
-				{
-
-					Herramienta3->set_Estado_art_a_alquilado(true);//lo pongo en true porque lo estan alquilando ahora
-					Herramienta3->set_tiempo(tiempo);
-					Herramienta3->set_Precio_D(500);
-					Herramienta3->set_Precio_s(3000);
-					cout << "Precio total al alquilarlo:  " << Herramienta3->get_total_alquilar() << endl;
-
-				}
+				funcionSwich(1, Cliente2, ELDuenyo,_Cambio);
 			}
-			Articulo8->set_precio(Herramienta3->get_total_alquilar());
-			Cliente2->agregarArt(*Articulo8);
 
-			if (Herramienta3->get_Estado_art_a_alquilado() == true)//aca nos fijamos esto porque si no esta alquilado no hya seguro a devolver
-			{
-				PlataSeguro = Herramienta3->get_Precio_S();
-				ELDuenyo->set_pagar_seguro(PlataSeguro);//esta devuelve la plata del seguro y por eso lo hacemos en otr funcion
-				Herramienta1->set_Estado_art_a_alquilado(false);//cuando le devulevo el seguro el me devuleve la Herramienta alquilada
-
-			}
-			break;
-
-			case 4:
-				Articulos * Articulo9 = new Articulos_CocinayBano_Bazar("Cortina", 200.0, "cocinabano", Amarillo);
-				unsigned int Cant_Art1;
-				cout << " Ingrese la cantidad de articulos que quiere: ";
-				cin >> Cant_Art1;
-				Articulo9->set_cant_art(Cant_Art1);
-				Articulo9->set_precio(1000);
-				Articulo9->set_cambio(true);
-				Cliente2->agregarArt(*Articulo9);
-				break;
-
-		
 		}
+		
 	}
+
+	else
+	{
+		cout << "No buscaba repuestos";
+	}
+
+	cout << "Esta buscanndo cambiar algun producto, respoda con si o no: " << endl;
+	cin >> rta3;
+	if (rta3 == "si" || rta3 == "Si" || rta3 == "SI")
+	{
+		//esto lo reponde el duenyo
+		cout << "Esta en condiciones de ser cambiado, respoda con si o no:: " << endl;
+			cin >> rta4;
+			if (rta4 == "si" || rta4 == "Si" || rta4 == "SI")
+			{
+				_Cambio = true;
+				funcionSwich(1, Cliente2, ELDuenyo,_Cambio);
+			}
+	}
+	
+
+	
 	 PresupuestoTotal = 0;
 	 PlataCliente = 0; //es la plata con la que nos paga el cliente
 	
@@ -328,7 +290,7 @@ int main()
 	cout << "Con cuanto desea abonar: ";
 	cin >> PlataCliente;
 
-	ELDuenyo->set_pagar_Articulos(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
+	ELDuenyo->set_pagar(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
 
 		cout << "La cantidad de cliente atendidos hoy fue: " << Cliente::get_cantclientes()<<endl;
 	
