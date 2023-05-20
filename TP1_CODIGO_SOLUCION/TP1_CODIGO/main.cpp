@@ -1,5 +1,5 @@
 #include"Bibliotecas.h" 
-#include"FuncSwich.h"
+#include"FuncSwitch.h"
 using namespace std;
 
 int main()
@@ -41,7 +41,7 @@ int main()
 
 //Ingresamos Dia y "tomamos hora"
 
-	time_t now = time(0);//tiempo actual
+	time_t now = time(0);//tiempo actual de la computadora
 	string Dia;//ingresamos el dia nosotros
 	cout << "DIA: ";
 	cin >> Dia;
@@ -66,11 +66,8 @@ int main()
 		Articulo1->set_cant_art(30);
 		Articulo1->set_precio(20);
 		
-
 		Articulo2->set_cant_art(1);
 		
-		
-
 		Herramientas* Herramienta1 = dynamic_cast<Herramientas*>(Articulo2);
 		Herramienta1->set_Alquiler(true);
 		
@@ -100,7 +97,7 @@ int main()
 		Articulo5->set_precio(40);
 		
 
-		Cliente1->set_foto(true);
+		Cliente1->set_foto(true);//si la foto es true, significa que tiene foto y por lo tanto le puedo dar el repuesto
 		if (Cliente1->get_foto() == true)
 		{
 			Articulos* Repuesto1 = new Articulos_Ferreteria("Tornillo", 1.5, "Ferreteria", "Metal", TipoF2);
@@ -132,7 +129,7 @@ int main()
 
 			ELDuenyo->set_pagar(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
 			
-			if (Herramienta1->get_Estado_art_a_alquilado() == true)//aca nos fijamos esto porque si no esta alquilado no hya seguro a devolver
+			if (Herramienta1->get_Estado_art_a_alquilado() == true)//aca nos fijamos esto porque si no esta alquilado no hay seguro a devolver
 			{
 				PlataSeguro = Herramienta1->get_Precio_S();
 				ELDuenyo->set_pagar_seguro(PlataSeguro);//esta devuelve la plata del seguro y por eso lo hacemos en otr funcion
@@ -201,18 +198,16 @@ int main()
 		
 			
 
-			try
-			{
-				Empleados* Empleado5 = new Despachante("Despachante", "Daniel", "Dim", "34567897", 70000);
-				Despachante* Despachante2 = dynamic_cast<Despachante*>(Empleado5);
-				ELDuenyo->despedir(*Empleado5);
-			}
-			catch (const std::exception& e)
-			{
-				cout << "Error: " << e.what() << endl;
-			}
-
-		
+		try
+		{
+			Empleados* Empleado5 = new Despachante("Despachante", "Daniel", "Dim", "34567897", 70000);
+			Despachante* Despachante2 = dynamic_cast<Despachante*>(Empleado5);
+			ELDuenyo->despedir(*Empleado5);
+		}
+		catch (const std::exception& e)
+		{
+			cout << "Error: " << e.what() << endl;
+		}
 
 		try
 		{
@@ -227,6 +222,7 @@ int main()
 
 		//CLIENTE 2
 		string name, direc, tel;
+		cout << "-------------------------------" << endl;// para dividir los clientes
 		cout << "Ingrese nombre cliente: " << endl;
 		cin >> name;
 		cout << "Ingrese Direccion del cliente: " << endl;
@@ -234,14 +230,19 @@ int main()
 		cout << "Ingrese telefono del cliente: " << endl;
 		cin >> tel;
 
+	//creamos al cliente
 	Cliente* Cliente2=new Cliente(name, direc, tel);
+	
 	unsigned int k;
 	string rta,rta2,rta3,rta4;
+	bool _Cambio = false;
+
+	//le preguntamos cuantos articulos quiere comprar
 	cout << "cuantos articulos quiere comprar: ";
 	cin >> k;
-	bool _Cambio=false;
-	funcionSwich(k, Cliente2, ELDuenyo,_Cambio);
-	FuncSwich2(Cerrajero1, Despachante1,  k, Plomero1, ELDuenyo); 
+	
+	funcionSwitch(k, Cliente2, ELDuenyo,_Cambio); //esta funcion se encarga de a partir de los articulos que tenemos agregarlos a la lista del cliente
+	FuncSwitch2(Cerrajero1, Despachante1,  k, Plomero1, ELDuenyo); //esta funcion se encarga del servicio de los empleados
 	
 	cout << "Esta buscando el repuesto de alguna pieza, respoda con si o no: "<<endl;
 	cin >> rta;
@@ -254,7 +255,7 @@ int main()
 			Cliente2->set_foto(true);
 			if (Cliente2->get_foto() == true)
 			{
-				funcionSwich(1, Cliente2, ELDuenyo,_Cambio);
+				funcionSwitch(1, Cliente2, ELDuenyo,_Cambio);
 			}
 
 		}
@@ -276,14 +277,14 @@ int main()
 			if (rta4 == "si" || rta4 == "Si" || rta4 == "SI")
 			{
 				_Cambio = true;
-				funcionSwich(1, Cliente2, ELDuenyo,_Cambio);
+				funcionSwitch(1, Cliente2, ELDuenyo,_Cambio);
 			}
 	}
 	
 
 	
-	 PresupuestoTotal = 0;
-	 PlataCliente = 0; //es la plata con la que nos paga el cliente
+	PresupuestoTotal = 0;
+	PlataCliente = 0; //es la plata con la que nos paga el cliente
 	
 	PresupuestoTotal = Cliente2->generarPresupuestos(*stockp);
 	ELDuenyo->set_cobrar(PresupuestoTotal);//aca se le informa al cliente cuanto abonar
@@ -296,6 +297,7 @@ int main()
 	
 		
 		delete Cliente1;
+		delete Cliente2;
 		delete Articulo1;
 		delete Articulo3;
 		delete Articulo4;

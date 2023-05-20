@@ -42,9 +42,6 @@ public:
     void imprimir();
 
     
-    
-
-
 protected:
     const string Nombre_cliente;
     const string Direc_cliente;

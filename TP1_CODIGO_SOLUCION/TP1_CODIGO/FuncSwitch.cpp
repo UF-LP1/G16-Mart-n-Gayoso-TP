@@ -1,7 +1,7 @@
-#include "FuncSwich.h"
+#include "FuncSwitch.h"
 #include<iostream>
 
-void funcionSwich(int k, Cliente *cliente,Duenyo_ferreteria *duenio,bool Cambio)
+void funcionSwitch(int k, Cliente *cliente,Duenyo_ferreteria *duenio,bool Cambio)
 {
 Articulos* Articulo6=nullptr;
 Articulos* Articulo7 = nullptr;  
@@ -154,7 +154,7 @@ for (i = 0; i < k; i++)
 
 
 
-void FuncSwich2(Servicio_cerrajeria* Cerrajero, Despachante* _Despachante, unsigned int k, Plomero* _Plomero, Duenyo_ferreteria* duenio)
+void FuncSwitch2(Servicio_cerrajeria* Cerrajero, Despachante* _Despachante, unsigned int k, Plomero* _Plomero, Duenyo_ferreteria* duenio)
 {
 	cout << "Elija el servicio:  " << endl << "1 Cerrajeria" << endl << "2 Despachante" << endl << "3 Plomero" << endl;
 	int num;
