@@ -143,7 +143,7 @@ void funcionSwitch(int k, Cliente* cliente, Duenyo_ferreteria* duenio, bool Camb
 				cout << " la opcion elegida no existe ";
 			}
 
-		} while (num < 1 || num>4);
+		} while (num < 1 && num>4);
 
 		delete Articulo6;
 		delete Articulo7;
@@ -249,7 +249,7 @@ void FuncSwitch2(Servicio_cerrajeria* Cerrajero, Despachante* _Despachante, unsi
 			cout << " la opcion elegida no existe ";
 		}
 
-	} while (num < 1 || num>3);
+	} while (num < 1 && num>3);
 
 	return ;
 }
