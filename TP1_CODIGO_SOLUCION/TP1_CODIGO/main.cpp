@@ -126,6 +126,7 @@ int main()
 				ELDuenyo->set_cobrar(PresupuestoTotal);//aca se le informa al cliente cuanto abonar
 				cout << "Con cuanto desea abonar: ";
 				cin >> PlataCliente;
+				cout << endl;
 
 			ELDuenyo->set_pagar(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
 			
@@ -223,33 +224,49 @@ int main()
 		//CLIENTE 2
 		string name, direc, tel;
 		cout << "-------------------------------" << endl;// para dividir los clientes
-		cout << "Ingrese nombre cliente: " << endl;
+		cout << "Ingrese nombre cliente: " ;
 		cin >> name;
-		cout << "Ingrese Direccion del cliente: " << endl;
+		getline(cin, name);
+		cout << endl;
+		cout << "Ingrese Direccion del cliente: ";
 		cin >> direc;
-		cout << "Ingrese telefono del cliente: " << endl;
+		getline(cin, direc);
+		cout << endl;
+		cout << "Ingrese telefono del cliente: " ;
 		cin >> tel;
+		getline(cin, tel);
+		cout << endl;
 
 	//creamos al cliente
 	Cliente* Cliente2=new Cliente(name, direc, tel);
 	
 	unsigned int k;
-	string rta,rta2,rta3,rta4;
+	string rta,rta2,rta3,rta4,rta6;
 	bool _Cambio = false;
 
 	//le preguntamos cuantos articulos quiere comprar
 	cout << "cuantos articulos quiere comprar: ";
 	cin >> k;
+	cout << endl;
 	
 	funcionSwitch(k, Cliente2, ELDuenyo,_Cambio); //esta funcion se encarga de a partir de los articulos que tenemos agregarlos a la lista del cliente
-	FuncSwitch2(Cerrajero1, Despachante1,  k, Plomero1, ELDuenyo); //esta funcion se encarga del servicio de los empleados
-	
-	cout << "Esta buscando el repuesto de alguna pieza, respoda con si o no: "<<endl;
+
+		cout << "Desea utilizar alguno de los servicios, respoda con si o no: ";
+		cin >> rta6;
+		cout << endl;
+			if (rta6 == "si" || rta6 == "Si" || rta6 == "SI")
+			{
+				FuncSwitch2(Cerrajero1, Despachante1,  k, Plomero1, ELDuenyo); //esta funcion se encarga del servicio de los empleados
+			}
+
+	cout << "Esta buscando el repuesto de alguna pieza, respoda con si o no: ";
 	cin >> rta;
+	cout << endl;
 	if (rta == "si" || rta == "Si" || rta == "SI")
 	{
-		cout << "Tiene foto de lo que esta buscando? respoda con si o no: " << endl;
+		cout << "Tiene foto de lo que esta buscando? respoda con si o no: " ;
 		cin >> rta2;
+		cout << endl;
 		if (rta2 == "si" || rta2 == "Si" || rta2 == "SI")
 		{
 			Cliente2->set_foto(true);
@@ -265,15 +282,18 @@ int main()
 	else
 	{
 		cout << "No buscaba repuestos";
+		cout << endl;
 	}
 
-	cout << "Esta buscanndo cambiar algun producto, respoda con si o no: " << endl;
+	cout << "Esta buscanndo cambiar algun producto, respoda con si o no: " ;
 	cin >> rta3;
+	cout << endl;
 	if (rta3 == "si" || rta3 == "Si" || rta3 == "SI")
 	{
 		//esto lo reponde el duenyo
-		cout << "Esta en condiciones de ser cambiado, respoda con si o no:: " << endl;
+		cout << "Esta en condiciones de ser cambiado, respoda con si o no:: " ;
 			cin >> rta4;
+			cout << endl;
 			if (rta4 == "si" || rta4 == "Si" || rta4 == "SI")
 			{
 				_Cambio = true;
@@ -290,6 +310,7 @@ int main()
 	ELDuenyo->set_cobrar(PresupuestoTotal);//aca se le informa al cliente cuanto abonar
 	cout << "Con cuanto desea abonar: ";
 	cin >> PlataCliente;
+	cout << endl;
 
 	ELDuenyo->set_pagar(PlataCliente, PresupuestoTotal);//esto te da el vuelto de tu presupueto
 
@@ -305,7 +326,7 @@ int main()
 		delete Empleado1;
 		delete Empleado2;
 		delete Empleado3;
-		delete Herramienta1;
+		
 		delete ELDuenyo;
 		delete stockp;
 		delete A1;

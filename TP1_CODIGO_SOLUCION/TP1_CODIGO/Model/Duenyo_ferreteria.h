@@ -12,9 +12,9 @@ using namespace std;
 #include"Articulos.h";
 #include"Empleados.h"
 #include"Herramientas.h"
-#include "C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Excero.h"
+#include "C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS 3\TP1_CODIGO_SOLUCION\TP1_CODIGO\Excero.h"
 #include <exception>
-#include"C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\ExpDesp.h"
+#include "C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS 3\TP1_CODIGO_SOLUCION\TP1_CODIGO\ExpDesp.h" 
 
 
 class Duenyo_ferreteria {

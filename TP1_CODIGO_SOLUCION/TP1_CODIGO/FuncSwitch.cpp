@@ -15,8 +15,12 @@ void funcionSwitch(int k, Cliente* cliente, Duenyo_ferreteria* duenio, bool Camb
 	{
 		cout << "Elija que articulo quiere: " << endl;
 		cin >> num;
-		do
+		while (num<1||num>4)
 		{
+			cout << "Elija una opcion valida: ";
+			cin >> num;
+		}
+		
 			switch (num)
 			{
 			case 1:
@@ -80,6 +84,7 @@ void funcionSwitch(int k, Cliente* cliente, Duenyo_ferreteria* duenio, bool Camb
 				Articulo8 = new Herramientas("Pulidora", 90, "Herramientas");
 				Herramienta3 = dynamic_cast<Herramientas*>(Articulo8);
 				unsigned int tiempo;
+				tiempo = 0;
 				cout << "Cuantos dias quiere alquilar la Herramineta? ";
 				cin >> tiempo;
 
@@ -140,17 +145,19 @@ void funcionSwitch(int k, Cliente* cliente, Duenyo_ferreteria* duenio, bool Camb
 
 
 			default:
-				cout << " la opcion elegida no existe ";
+				cout << " la opcion elegida no existe "<<endl;
+				
 			}
 
-		} while (num < 1 && num>4);
 
-		delete Articulo6;
-		delete Articulo7;
-		delete Articulo8;
-		delete Articulo9;
-		delete Herramienta3;
+		
 	}
+	delete Articulo6;
+	delete Articulo7;
+	delete Articulo8;
+	delete Articulo9;
+	
+
 }
 
 
@@ -165,7 +172,11 @@ void FuncSwitch2(Servicio_cerrajeria* Cerrajero, Despachante* _Despachante, unsi
 	string rta,rta2;
 	unsigned int PlataCli;
 
-	do {
+	while (num < 1 || num>3)
+	{
+		cout << "Elija una opcion valida: ";
+		cin >> num;
+	}
 		switch (num)
 		{
 		case 1:
@@ -207,7 +218,7 @@ void FuncSwitch2(Servicio_cerrajeria* Cerrajero, Despachante* _Despachante, unsi
 
 		case 2:
 			_Despachante->set_Cant_prod_entreg(k);
-			cout << "La Cantidad de productos a entregar por el despachante segun los productos comprasdos es: " << _Despachante->get_cant_prod();
+			cout << "La Cantidad de productos a entregar por el despachante segun los productos comprasdos es : " << _Despachante->get_cant_prod();
 			_Despachante->set_PrecServ(6000);
 			_Despachante->realizar_trabajo();
 			duenio->set_cobrar(_Despachante->get_PrecServ());
@@ -224,16 +235,19 @@ void FuncSwitch2(Servicio_cerrajeria* Cerrajero, Despachante* _Despachante, unsi
 			if (rta2 == "Matenimiento" || rta2 == "matenimiento")
 			{
 				_Plomero->set_Mantenimiento(true);
+				_Plomero->set_PrecServ(5000);
 			}
 			else if (rta2 == "Reparacion" || rta2 == "reparacion")
 			{
 				_Plomero->set_rep_inst(true);
 				_Plomero->set_Mantenimiento(false);
+				_Plomero->set_PrecServ(4000);
 			}
 			else
 			{
 				_Plomero->set_rep_inst(false);
 				_Plomero->set_Mantenimiento(false);
+				_Plomero->set_PrecServ(8000);
 			}
 
 			_Plomero->realizar_trabajo();
@@ -246,10 +260,11 @@ void FuncSwitch2(Servicio_cerrajeria* Cerrajero, Despachante* _Despachante, unsi
 			break;
 
 		default:
-			cout << " la opcion elegida no existe ";
+			cout << "la opcion elegida no existe "<<endl;
+			
 		}
 
-	} while (num < 1 && num>3);
+	
 
 	return ;
 }
