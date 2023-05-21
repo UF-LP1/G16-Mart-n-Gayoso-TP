@@ -33,7 +33,6 @@ protected:
         const string Nombre;
         const string Apellido;
         const string Dni;
-    bool A_domicilio;
         const unsigned int Sueldos;
     unsigned int PrecioServicio;
     

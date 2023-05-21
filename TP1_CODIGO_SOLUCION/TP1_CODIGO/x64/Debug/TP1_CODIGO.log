@@ -1,1 +1,38 @@
-﻿  TP1_CODIGO.vcxproj -> C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\x64\Debug\TP1_CODIGO.exe
+﻿  Excero.cpp
+  ExpDesp.cpp
+  FuncSwitch.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(10,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(11,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Ferreteria.h(11,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(12,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(15,10): fatal  error C1083: No se puede abrir el archivo incluir: 'C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Excero.h': No such file or directory
+  main.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(10,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(11,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Ferreteria.h(11,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(12,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(15,10): fatal  error C1083: No se puede abrir el archivo incluir: 'C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Excero.h': No such file or directory
+  Articulos.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos.cpp(36,16): warning C4244: 'return': conversión de 'unsigned int' a 'float'; posible pérdida de datos
+  Articulos_CocinayBano_Bazar.cpp
+  Articulos_Electricidad.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(10,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Electricidad.h(11,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Articulos_Ferreteria.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Articulos_Ferreteria.h(11,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Cliente.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(87,11): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(100,53): warning C4244: '+=': conversión de 'float' a 'unsigned int'; posible pérdida de datos
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Cliente.cpp(86,9): warning C4101: 'i': variable local sin referencia
+  Despachante.cpp
+  Duenyo_ferreteria.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(12,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Duenyo_ferreteria.h(15,10): fatal  error C1083: No se puede abrir el archivo incluir: 'C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP CAMBIOS2\TP1_CODIGO_SOLUCION\TP1_CODIGO\Excero.h': No such file or directory
+  Empleados.cpp
+  Ferreteria.cpp
+  Herramientas.cpp
+  Plomero.cpp
+  Servicio_cerrajeria.cpp
+  stock.cpp
+  Generando código...
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\Tp repositorio\TP1_CODIGO_SOLUCION\TP1_CODIGO\Model\Ferreteria.cpp(55): warning C4715: 'Ferreteria::ingreso_horario': no todas las rutas de acceso de control devuelven un valor

@@ -14,7 +14,6 @@
 
 Empleados::Empleados(string _Tipo_empleado, string _Nombre, string _Apellido, string _Dni, unsigned int _Sueldos): Tipo_empleado(_Tipo_empleado),Nombre(_Nombre),Apellido(_Apellido),Dni(_Dni),Sueldos(_Sueldos)
 {
-    this->A_domicilio = false;
 } 
 
 
